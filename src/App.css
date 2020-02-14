@@ -28,6 +28,7 @@
 
 #topleftdiv {
   width: 60%;
+  height: auto;
   /* background-color: aquamarine; */
   border: 1px solid black;
 }
@@ -102,3 +103,6 @@
   width: 50%;
   float: left;
 }
+/* #textdiv {
+  border: 1px solid yellow;
+} */
