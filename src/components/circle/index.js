@@ -1,7 +1,7 @@
 import React from "react";
 
-function Circle() {
-  return <div className="circle"></div>;
+function Circle(props) {
+  return <div className={props.className} id={props.id}></div>;
 }
 
 export default Circle;

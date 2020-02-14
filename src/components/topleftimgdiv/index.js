@@ -4,8 +4,8 @@ function topimage() {
   return (
     <>
       <div id="topleftimg">
-        <Circle></Circle>
-        <Circle></Circle>
+        <Circle className="circletopleft"></Circle>
+        <Circle className="circletopleft"></Circle>
       </div>
     </>
   );

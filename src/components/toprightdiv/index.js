@@ -3,7 +3,7 @@ import Circle from "../circle/index";
 function toprightdiv() {
   return (
     <>
-      <Circle></Circle>
+      <Circle className="circle" id="toprightdiv"></Circle>
     </>
   );
 }
