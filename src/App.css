@@ -2,37 +2,103 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#maindiv {
+  background-color: rgb(201, 198, 198);
+  height: 100vh;
+
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 100%;
+}
+.circleBottom {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#topflex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 60%;
 }
 
-.App-link {
-  color: #61dafb;
+#topleftdiv {
+  width: 60%;
+  /* background-color: aquamarine; */
+  border: 1px solid black;
+}
+#topleftimg {
+  display: flex;
+  height: 50%;
+  /* background-color: yellow; */
+}
+#topleftcontactdiv {
+  height: auto;
+  /* border: 1px solid black; */
+  /* background-color: darkblue; */
+  height: 40%;
+}
+#topleftcontactdiv div h2 {
+  word-wrap: break-word;
+  position: relative;
+  left: 30px;
+  top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#cardDiv {
+  display: flex;
+}
+
+#Cards {
+  border: 1px solid black;
+  height: 39.5vh;
+  width: 17%;
+  display: flex;
+  flex-flow: column;
+  transform: perspective(600px) rotateY(0deg);
+  transition: transform 0.6s linear;
+  backface-visibility: hidden;
+}
+
+#Cards:hover {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.back {
+  /* height: 39.5vh; */
+  position: relative;
+  background-color: chartreuse;
+  bottom: 40px;
+  /* transform: translate(0%, -350%); */
+}
+.back:hover {
+  transform: rotateY(180deg);
+  visibility: visible;
+}
+#cardimg {
+  flex: 0.8 1 auto;
+  /* border: 1px solid yellow; */
+  /* height: ; */
+}
+
+#cardTextContent {
+  word-wrap: break-word;
+  /* border: 1px solid red; */
+  flex: 0.2 1 auto;
+}
+
+#addressbtndiv {
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+
+#btndiv {
+  /* background-color: green; */
+  width: 50%;
+  float: left;
 }
