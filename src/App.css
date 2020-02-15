@@ -100,7 +100,7 @@ body {
 
 #Cards {
   border: 1px solid black;
-  height: 39.5vh;
+  height: 44.5vh;
   width: 16.5%;
   display: flex;
   flex-flow: column;
