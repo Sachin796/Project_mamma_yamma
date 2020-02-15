@@ -5,7 +5,7 @@ function topimage() {
     <>
       <div id="topleftimg">
         <Circle className="circletopleft"></Circle>
-        <Circle className="circletopleft"></Circle>
+        <Circle className="circletopright"></Circle>
       </div>
     </>
   );
