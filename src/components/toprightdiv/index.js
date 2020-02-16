@@ -1,15 +1,17 @@
 import React from "react";
-import Circle from "../circle/index";
+import Circle from "../navigation/index";
 function toprightdiv() {
+  const vertices = [
+    [0, 316],
+    [742, 316, 0, 1, 1, 1484, 316],
+    [742, 316, 0, 1, 1, 0, 316],
+    [0, 316],
+    [742, 316, 0, 1, 1, 1484, 316],
+    [742, 316, 0, 1, 1, 0, 316]
+  ];
   return (
     <>
-      {/* <img
-        src="https://i.imgur.com/kDDFvUp.png"
-        class="rotate"
-        width="100"
-        height="100"
-      /> */}
-      <Circle className="circle" id="toprightdiv"></Circle>
+      <Circle vertice={vertices} className="circle" id="toprightdiv"></Circle>
     </>
   );
 }

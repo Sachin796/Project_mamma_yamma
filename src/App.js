@@ -10,6 +10,7 @@ class App extends Component {
     // const circletype = new CircleType(document.getElementById("toprightdiv"));
     // circletype.forceWidth(true);
     // TweenLite.set();
+    
   }
 
   render() {
