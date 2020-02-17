@@ -14,7 +14,7 @@ body {
 #maindiv {
   background-color: rgb(201, 198, 198);
   height: auto;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .circle {
@@ -98,34 +98,54 @@ body {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  /* overflow-x: scroll; */
+}
+
+svg {
+  float: left;
+}
+
+#imgcircle {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #Cards {
   border: 1px solid black;
-  height: 44.5vh;
+  height: 53.5vh;
   width: 16.5%;
   display: flex;
-  flex-flow: column;
-  transform: perspective(600px) rotateY(0deg);
-  transition: transform 0.6s linear;
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+
+#Cards:hover #section1 {
+  transform: rotateY(180deg);
+}
+
+#frontpart {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   backface-visibility: hidden;
 }
 
-#Cards:hover {
-  transform: perspective(600px) rotateY(-180deg);
-}
-
-.back {
-  position: relative;
-  background-color: chartreuse;
-  bottom: 40px;
-}
-.back:hover {
-  transform: rotateY(180deg);
-  visibility: visible;
+#backpart {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
 }
 #cardimg {
-  flex: 0.8 1 auto;
+  height: 70%;
+}
+
+#Cards #section1 {
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 
 #cardTextContent {
@@ -147,7 +167,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   #Cards {
-    width: 33.01%;
+    width: 33.01% !;
   }
   #maindiv {
     height: auto;

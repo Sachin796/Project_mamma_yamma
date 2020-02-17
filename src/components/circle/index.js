@@ -3,7 +3,8 @@ import React from "react";
 function Circle(props) {
   return (
     <div className={props.className} id={props.id}>
-      Topleft/Top right
+      <img id="imgcircle"></img>
+      {/* <SvgComponent></SvgComponent> */}
     </div>
   );
 }
