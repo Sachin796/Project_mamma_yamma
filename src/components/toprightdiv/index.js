@@ -1,5 +1,7 @@
 import React from "react";
 import Circle from "../navigation/index";
+import toprightimage from "../images/topright.png";
+
 function toprightdiv() {
   const vertices = [
     [0, 316],
@@ -11,7 +13,14 @@ function toprightdiv() {
   ];
   return (
     <>
-      <Circle vertice={vertices} className="circle" id="toprightdiv"></Circle>
+      {/* <Circle vertice={vertices} className="circle" id="toprightdiv"> */}
+      <img
+        src={toprightimage}
+        height="400px"
+        width="700px"
+        id="imgcircle"
+      ></img>
+      {/* </Circle> */}
     </>
   );
 }
