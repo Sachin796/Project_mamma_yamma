@@ -11,12 +11,12 @@ function bottomdiv() {
   return (
     <>
       <div id="cardDiv" className="col l4 m8 s12">
-        <Card src={image1} id="imgcircle"></Card>
-        <Card src={image2} id="imgcircle"></Card>
-        <Card src={image3} id="imgcircle"></Card>
-        <Card src={image4} id="imgcircle"></Card>
-        <Card src={image5} id="imgcircle"></Card>
-        <Card src={image6} id="imgcircle"></Card>
+        <Card src={image1} className="imgcircle"></Card>
+        <Card src={image2} className="imgcircle"></Card>
+        <Card src={image3} className="imgcircle"></Card>
+        <Card src={image4} className="imgcircle"></Card>
+        <Card src={image5} className="imgcircle"></Card>
+        <Card src={image6} className="imgcircle"></Card>
       </div>
     </>
   );

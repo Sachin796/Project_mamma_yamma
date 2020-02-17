@@ -3,7 +3,7 @@ import image from "./";
 function Circle(props) {
   return (
     <div className={props.className} id={props.id}>
-      <img src={props.src} id="imgcircle"></img>
+      <img src={props.src} className="imgcircle" id="circletopright"></img>
     </div>
   );
 }

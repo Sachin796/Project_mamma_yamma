@@ -18,7 +18,8 @@ function toprightdiv() {
         src={toprightimage}
         height="400px"
         width="700px"
-        id="imgcircle"
+        className="imgcircle"
+        id="toprightdiv"
       ></img>
       {/* </Circle> */}
     </>

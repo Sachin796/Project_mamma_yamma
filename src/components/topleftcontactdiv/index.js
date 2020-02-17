@@ -25,7 +25,7 @@ function topleftcontact() {
               ></img>
             </div>
             <div id="textdiv">
-              <img src={textData} height="50px" width="80%"></img>
+              <img src={textData} id="textimg" height="50px" width="80%"></img>
             </div>
           </div>
         </div>
