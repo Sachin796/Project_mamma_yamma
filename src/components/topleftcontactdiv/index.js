@@ -3,7 +3,6 @@ import button from "../images/button.png";
 import textData from "../images/address.png";
 import socialicons from "../images/socialmedia.png";
 import contactNumber from "../images/contactnumber.png";
-// import Button from "../button/index";
 
 function topleftcontact() {
   return (
