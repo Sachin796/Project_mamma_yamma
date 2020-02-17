@@ -13,7 +13,11 @@ function Card(props) {
               croissant
             </div> */}
           </div>
-          <div id="backpart"></div>
+          <div id="backpart">
+            <div id="cardimg" className="circleBottom">
+              <img src={props.src} id={props.id}></img>
+            </div>
+          </div>
         </div>
       </div>
     </>
