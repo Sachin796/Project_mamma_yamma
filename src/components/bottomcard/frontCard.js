@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "../images/backpageicon.png";
 function Card(props) {
   return (
     <>
@@ -15,7 +16,7 @@ function Card(props) {
           </div>
           <div id="backpart">
             <div id="cardimg" className="circleBottom">
-              <img src={props.src} id={props.id}></img>
+              <img src={Image} id={props.id}></img>
             </div>
           </div>
         </div>

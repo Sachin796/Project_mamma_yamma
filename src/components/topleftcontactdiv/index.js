@@ -1,4 +1,8 @@
 import React from "react";
+import button from "../images/button.png";
+import textData from "../images/address.png";
+import socialicons from "../images/socialmedia.png";
+import contactNumber from "../images/contactnumber.png";
 // import Button from "../button/index";
 
 function topleftcontact() {
@@ -6,16 +10,29 @@ function topleftcontact() {
     <>
       <div id="topleftcontactdiv">
         <div>
-          <h2>8(985)788-85-78</h2>
-        </div>
-        <div id="addressbtndiv">
-          <div id="btndiv">{/* <Button></Button> */}</div>
-          <div id="textdiv">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
+          <img
+            src={contactNumber}
+            id="contact"
+            height="40px"
+            width="180px"
+          ></img>
+          <div id="addressbtndiv">
+            <div id="btndiv">
+              <img
+                src={button}
+                id="buttonaddress"
+                height="50px"
+                width="150px"
+              ></img>
+            </div>
+            <div id="textdiv">
+              <img src={textData} height="50px" width="80%"></img>
+            </div>
           </div>
         </div>
+        {/* <div id="social_icons">
+          <img src={socialicons} id="socialicons"></img>
+        </div> */}
       </div>
     </>
   );
