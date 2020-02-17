@@ -15,9 +15,10 @@ function Card(props) {
             </div> */}
           </div>
           <div id="backpart">
-            <div id="cardimg" className="circleBottom">
-              <img src={Image} id={props.id}></img>
-            </div>
+            <div id="backimgdiv">Hello</div>
+            {/* <div id="cardimg"> */}
+            {/* <p id="backimgdiv">hello<img src={Image}></img></p> */}
+            {/* </div> */}
           </div>
         </div>
       </div>

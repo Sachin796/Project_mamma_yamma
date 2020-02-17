@@ -26,22 +26,22 @@ body {
 .circletopleft {
   position: relative;
   border: 1px solid black;
-  height: 10vw;
+  height: 12vw;
   border-radius: 50%;
   /* margin: 60px; */
-  margin-top: 60px;
+  margin-top: 40px;
   margin-left: 10vw;
-  width: 20%;
+  width: 12vw;
 }
 
 .circletopright {
   position: relative;
-  height: 10vw;
-  margin-top: 30px;
+  height: 12vw;
+  margin-top: 40px;
   right: -10px;
   margin-left: 7vw;
   border-radius: 50%;
-  width: 20%;
+  width: 12vw;
 }
 
 .circleBottom {
@@ -80,7 +80,7 @@ body {
 }
 #topleftimg {
   display: flex;
-  height: 60%;
+  height: 65%;
 }
 #topleftcontactdiv {
   height: auto;
@@ -132,7 +132,7 @@ svg {
 
 #contact {
   margin-bottom: 0px !important;
-  padding-top: 30px;
+  padding-top: 12px;
   margin-left: 40px;
 }
 
@@ -157,11 +157,12 @@ svg {
 }
 
 #backpart {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: auto;
   backface-visibility: hidden;
-  transform: rotateX(180deg);
+  /* background-color: yellow; */
+  transform: rotateY(180deg);
 }
 #cardimg {
   height: 100%;
@@ -225,7 +226,7 @@ svg {
 
 /* **************************************************** */
 
-@media screen and (max-width: 1440px) and (min-width: 1367px) {
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
   #maindiv {
     height: auto;
   }
@@ -236,20 +237,22 @@ svg {
     min-width: 100%;
     width: 100%;
   }
-}
 
-/* **************************************************** */
-
-@media screen and (max-width: 1366px) and (min-width: 1201px) {
-  #maindiv {
-    height: auto;
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 30px;
   }
 
-  #cardimg img {
-    height: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
+  #textimg {
+    height: 40px;
+    margin-left: 20px;
+    width: 80%;
+  }
+
+  #addressbtndiv {
+    display: flex;
+    position: relative;
+    top: 10px;
   }
 }
 
@@ -259,11 +262,7 @@ svg {
   #maindiv {
     height: auto;
   }
-}
 
-/* **************************************************** */
-
-@media screen and (max-width: 1199px) and (min-width: 1024px) {
   /* Bottom cards */
   #cardDiv {
     display: flex;
@@ -274,17 +273,61 @@ svg {
   }
 
   #cardimg img {
+    max-width: 100%;
+    min-height: 100%;
     width: 100%;
   }
   #Cards {
-    height: 200px;
+    height: 50vh;
   }
+
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 30px;
+  }
+
+  #textimg {
+    height: 40px;
+    margin-left: 20px;
+    width: 80%;
+  }
+
+  #addressbtndiv {
+    display: flex;
+    position: relative;
+    top: 10px;
+  }
+
+  /*
+  #topleftimg {
+    display: flex;
+    height: 55%;
+  }
+
+  .circletopleft {
+    position: relative;
+    border: 1px solid black;
+    height: 12vw;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: 10vw;
+    width: 12vw;
+  }
+
+  .circletopright {
+    position: relative;
+    height: 12vw;
+    margin-top: 40px;
+    margin-left: 7vw;
+    border-radius: 50%;
+    width: 12vw;
+  } */
 }
 
 /* **************************************************** */
 
-@media screen and (max-width: 1023px) and (min-width: 901px) {
-  #topflex {
+@media screen and (max-width: 1024px) and (min-width: 900px) {
+  /* #topflex {
     display: block !important;
   }
   .imgcircle {
@@ -308,19 +351,19 @@ svg {
   #addressbtndiv {
     top: 0px;
     /* position: relative; */
-    left: 30px;
+  /* left: 30px;
   }
   #btndiv {
     position: fixed; /* pops out button from the flow  */
-  }
+  /* }
   #textdiv {
     word-wrap: break-word;
     word-break: break-all;
     width: 40%;
     margin: auto;
-  }
+  } */
 
-  .circletopleft {
+  /* .circletopleft {
     top: 20px;
     margin-left: 20%;
     margin-right: 20%;
@@ -341,6 +384,8 @@ svg {
   }
 
   #cardimg img {
+    max-width: 100%;
+    min-height: 100%;
     width: 100%;
   }
 
@@ -349,22 +394,67 @@ svg {
   }
 
   #Cards {
-    height: 170px;
+    height: 44vh;
   }
 
-  .circleBottom {
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 30px;
+  }
+
+  #textimg {
+    height: 40px;
+    margin-left: 20px;
+    width: 80%;
+  }
+
+  #addressbtndiv {
+    display: flex;
+    position: relative;
+    top: 10px;
+  }
+
+  /* #backimgdiv {
+    background-color: blueviolet;
+    height: 300px;  */
+  /* } */
+
+  /* .circleBottom {
     border: 1px solid red;
     height: 150px;
     /* border-radius: 50%; */
-    width: 100%;
-  }
+  /* width: 100%; */
+  /* }  */
 }
 
 /* **************************************************** */
 
 /* Responsive for 600-900px */
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width: 900px) and (min-width: 768px) {
   #cardDiv {
+    display: flex;
+  }
+
+  #cardimg {
+    height: 100%;
+  }
+
+  #Cards {
+    width: 32.87%;
+  }
+
+  #Cards {
+    height: 50vh;
+  }
+
+  #cardimg img {
+    width: 100%;
+    height: 10vh;
+    max-width: 100%;
+    min-height: 100%;
+  }
+
+  /* #cardDiv {
     display: flex;
   }
 
@@ -374,6 +464,84 @@ svg {
 
   #cardimg img {
     width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+  }
+
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 30px;
+  }
+
+  #textimg {
+    height: 40px;
+    margin-left: 20px;
+    width: 80%;
+  }
+
+  #addressbtndiv {
+    display: flex;
+    position: relative;
+    top: 10px;
+  } */
+}
+
+/* ******************************** */
+
+/* Responsive for 600-768px */
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  /* #cardDiv {
+    display: flex;
+  }
+
+  #Cards {
+    width: 33%;
+  }
+
+  #cardimg img {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+  }
+
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 30px;
+  }
+
+  #textimg {
+    height: 40px;
+    margin-left: 20px;
+    width: 80%;
+  }
+
+  #addressbtndiv {
+    display: flex;
+    position: relative;
+    top: 10px;
+  } */
+
+  #cardDiv {
+    display: flex;
+  }
+
+  #cardimg {
+    height: 100%;
+  }
+
+  #Cards {
+    width: 32.87%;
+  }
+
+  #Cards {
+    height: 50vh;
+  }
+
+  #cardimg img {
+    width: 100%;
+    height: 10vh;
+    max-width: 100%;
+    min-height: 100%;
   }
 }
 
@@ -384,12 +552,36 @@ svg {
   }
 
   #Cards {
-    width: 49.5%;
+    width: 32.87%;
   }
 
   #cardimg img {
     width: 100%;
+    max-width: 100%;
+    min-height: 100%;
   }
+
+  /* #cardDiv {
+    display: flex;
+  }
+
+  #Cards {
+    width: 49.5%;
+  }
+
+  #cardimg img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  #cardimg {
+    height: 100%;
+  }
+
+  #Cards {
+    height: 44vh;
+  } */
 }
 
 /* **************************************************** */
@@ -431,7 +623,9 @@ svg {
   }
 
   #circleindex {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    /* width: 100%; */
   }
 
   #topleftdiv {
@@ -486,58 +680,53 @@ svg {
     min-width: 100%;
     height: 300px;
   }
-  /* ********** */
-  #section1 {
-    background-color: yellow;
+  #cardDiv {
+    display: flex;
   }
 
-  #cardDiv {
-    display: inline-block;
-
-    width: 100%;
+  #cardimg {
+    height: 100%;
   }
 
   #Cards {
     width: 100%;
   }
 
-  #frontpart {
-    background-color: aqua;
-    height: 71vw;
+  #Cards {
+    height: 60vh;
   }
 
   #cardimg img {
-    height: 100%;
-    max-width: 100%;
-    min-width: 100%;
     width: 100%;
+    height: 10vh;
+    max-width: 100%;
+    min-height: 100%;
   }
 }
 
-@media screen and (max-width: 384px) and (min-width: 320px) {
+@media screen and (max-width: 385px) and (min-width: 320px) {
   /* ********** */
-  #section1 {
-    background-color: yellow;
-  }
 
   #cardDiv {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+  }
+
+  #cardimg {
+    height: 100%;
   }
 
   #Cards {
     width: 100%;
   }
 
-  #frontpart {
-    background-color: aqua;
-    height: 74vw;
+  #Cards {
+    height: 60vh;
   }
 
   #cardimg img {
-    height: 100%;
-    max-width: 100%;
-    min-width: 100%;
     width: 100%;
+    height: 10vh;
+    max-width: 100%;
+    min-height: 100%;
   }
 }

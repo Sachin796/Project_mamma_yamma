@@ -10,7 +10,7 @@ import image6 from "../images/bottom_img_6.png";
 function bottomdiv() {
   return (
     <>
-      <div id="cardDiv" className="col l4 m8 s12">
+      <div id="cardDiv">
         <Card src={image1} className="imgcircle"></Card>
         <Card src={image2} className="imgcircle"></Card>
         <Card src={image3} className="imgcircle"></Card>
