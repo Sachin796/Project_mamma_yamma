@@ -28,7 +28,6 @@ body {
   border: 1px solid black;
   height: 12vw;
   border-radius: 50%;
-  /* margin: 60px; */
   margin-top: 40px;
   margin-left: 10vw;
   width: 12vw;
@@ -46,7 +45,6 @@ body {
 
 .circleBottom {
   border: 1px solid black;
-  /* border-radius: 50%; */
   width: 100%;
 }
 
@@ -113,7 +111,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  /* overflow-x: scroll; */
 }
 
 svg {
@@ -161,7 +158,6 @@ svg {
   width: 100%;
   height: auto;
   backface-visibility: hidden;
-  /* background-color: yellow; */
   transform: rotateY(180deg);
 }
 #cardimg {
@@ -174,12 +170,6 @@ svg {
   transform-style: preserve-3d;
   transition: all 0.5s ease;
 }
-
-/* #cardTextContent {
-  word-wrap: break-word;
-  flex: 0.2 1 auto;
-  /* top: 40px; */
-/* }  */
 
 #addressbtndiv {
   display: flex;
@@ -204,7 +194,6 @@ svg {
     max-width: 100%;
     min-width: 100%;
     width: 100%;
-    /* display: none; */
   }
   #buttonaddress {
     margin-top: 0px !important;
@@ -224,7 +213,6 @@ svg {
     max-width: 100%;
     min-width: 100%;
     width: 100%;
-    /* display: none; */
   }
   #buttonaddress {
     margin-top: 0px !important;
@@ -369,31 +357,6 @@ svg {
     position: relative;
     top: 10px;
   }
-
-  /*
-  #topleftimg {
-    display: flex;
-    height: 55%;
-  }
-
-  .circletopleft {
-    position: relative;
-    border: 1px solid black;
-    height: 12vw;
-    border-radius: 50%;
-    margin-top: 40px;
-    margin-left: 10vw;
-    width: 12vw;
-  }
-
-  .circletopright {
-    position: relative;
-    height: 12vw;
-    margin-top: 40px;
-    margin-left: 7vw;
-    border-radius: 50%;
-    width: 12vw;
-  } */
 }
 
 /* **************************************************** */
@@ -431,53 +394,6 @@ svg {
 
   #toprightdiv {
     width: 500px;
-  }
-
-  /* #topflex {
-    display: block !important;
-  }
-  .imgcircle {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  #topleftdiv {
-    width: auto;
-  }
-  #toprightdiv {
-    width: auto;
-    height: 50vh;
-  }
-  .circletopleft {
-    margin: 30px;
-  }
-  #topleftcontactdiv div h2 {
-    text-align: center;
-    top: 0px;
-  }
-  #addressbtndiv {
-    top: 0px;
-    /* position: relative; */
-  /* left: 30px;
-  }
-  #btndiv {
-    position: fixed; /* pops out button from the flow  */
-  /* }
-  #textdiv {
-    word-wrap: break-word;
-    word-break: break-all;
-    width: 40%;
-    margin: auto;
-  } */
-
-  /* .circletopleft {
-    top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-    height: 200px;
-  }
-
-  .circletopright {
-    display: none;
   }
 
   /* Bottom cards */
@@ -519,18 +435,6 @@ svg {
     position: relative;
     top: 10px;
   }
-
-  /* #backimgdiv {
-    background-color: blueviolet;
-    height: 300px;  */
-  /* } */
-
-  /* .circleBottom {
-    border: 1px solid red;
-    height: 150px;
-    /* border-radius: 50%; */
-  /* width: 100%; */
-  /* }  */
 }
 
 /* **************************************************** */
@@ -590,20 +494,6 @@ svg {
     min-height: 100%;
   }
 
-  /* #cardDiv {
-    display: flex;
-  }
-
-  #Cards {
-    width: 33%;
-  }
-
-  #cardimg img {
-    width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-  }
-
   #buttonaddress {
     margin-top: 0px !important;
     margin-left: 30px;
@@ -619,27 +509,13 @@ svg {
     display: flex;
     position: relative;
     top: 10px;
-  } */
+  }
 }
 
 /* ******************************** */
 
 /* Responsive for 600-768px */
 @media screen and (max-width: 768px) and (min-width: 600px) {
-  /* #cardDiv {
-    display: flex;
-  }
-
-  #Cards {
-    width: 33%;
-  }
-
-  #cardimg img {
-    width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-  }
-
   #buttonaddress {
     margin-top: 0px !important;
     margin-left: 30px;
@@ -648,14 +524,14 @@ svg {
   #textimg {
     height: 40px;
     margin-left: 20px;
-    width: 80%;
+    width: 60%;
   }
 
   #addressbtndiv {
     display: flex;
     position: relative;
     top: 10px;
-  } */
+  }
 
   .circletopleft {
     border: none;
@@ -756,28 +632,6 @@ svg {
     max-width: 100%;
     min-height: 100%;
   }
-
-  /* #cardDiv {
-    display: flex;
-  }
-
-  #Cards {
-    width: 49.5%;
-  }
-
-  #cardimg img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  #cardimg {
-    height: 100%;
-  }
-
-  #Cards {
-    height: 44vh;
-  } */
 }
 
 /* **************************************************** */
@@ -806,7 +660,6 @@ svg {
 
   .circletopleft {
     border: none;
-    /* background-color: aqua; */
     max-width: 100%;
     min-width: 100%;
     margin-top: 30px;
@@ -821,14 +674,11 @@ svg {
   #circleindex {
     max-width: 100%;
     max-height: 100%;
-    /* width: 100%; */
   }
 
   #topleftdiv {
     width: 100%;
   }
-
-  /* ***** */
 
   /* ***** ContactNumber and addressdiv  *****  */
 
