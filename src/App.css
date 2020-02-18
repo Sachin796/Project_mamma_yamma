@@ -17,6 +17,18 @@ body {
   /* object-fit: cover; */
 }
 
+#contactnumberdiv {
+  display: flex;
+}
+
+#textdiv1 {
+  display: none;
+}
+
+.sidetextdiv {
+  display: none;
+}
+
 .circle {
   margin-top: 10px;
   height: auto;
@@ -444,10 +456,22 @@ svg {
   .circletopleft {
     border: none;
     width: 18vw;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 4vw;
     margin-right: 0px;
     height: 18vw;
+  }
+
+  #topleftimg {
+    display: flex;
+    height: 55%;
+  }
+
+  #topleftcontactdiv {
+    height: auto;
+    display: flex;
+    border: 1px solid black;
+    height: 50%;
   }
 
   .circletopleft img {
@@ -459,7 +483,7 @@ svg {
   .circletopright {
     border: none;
     max-width: 100%;
-    margin-top: 50px;
+    margin-top: 3 0px;
     width: 18vw;
     margin-left: 4vw;
     height: 18vw;
@@ -497,6 +521,12 @@ svg {
   #buttonaddress {
     margin-top: 0px !important;
     margin-left: 30px;
+    height: 40px;
+    padding-left: 100px;
+  }
+
+  #contact {
+    padding-left: 80px;
   }
 
   #textimg {
@@ -506,9 +536,10 @@ svg {
   }
 
   #addressbtndiv {
-    display: flex;
+    display: inline-block;
     position: relative;
     top: 10px;
+    text-align: center;
   }
 }
 
@@ -518,17 +549,26 @@ svg {
 @media screen and (max-width: 768px) and (min-width: 600px) {
   #buttonaddress {
     margin-top: 0px !important;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
+  #topleftimg {
+    display: flex;
+    height: 58%;
+  }
+
+  #contact {
+    padding-left: 50px;
+  }
   #textimg {
     height: 40px;
-    margin-left: 20px;
-    width: 60%;
+    margin-left: 40px;
+    width: 81%;
+    margin-bottom: 20px;
   }
 
   #addressbtndiv {
-    display: flex;
+    display: inline-block;
     position: relative;
     top: 10px;
   }
@@ -637,9 +677,31 @@ svg {
 /* **************************************************** */
 
 /* From start to 450 */
-
-@media screen and (max-width: 450px) and (min-width: 385px) {
+/* @media screen and (max-width: 451px) {
+  #textdiv {
+    display: none;
+  } */
+/* } */
+@media screen and (max-width: 451px) and (min-width: 385px) {
   #topflex {
+    display: block;
+  }
+
+  #contactnumberdiv {
+    display: inline-block;
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 140px;
+  }
+
+  .sidetextdiv {
     display: block;
   }
 
@@ -683,7 +745,7 @@ svg {
   /* ***** ContactNumber and addressdiv  *****  */
 
   #contact {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     max-width: 100%;
     min-width: 100%;
     margin-left: 0px !important;
@@ -697,23 +759,21 @@ svg {
   #btndiv {
     display: inline-block !important  ;
     width: 100%;
-    margin-top: 100px;
-    background-color: blue;
   }
 
   #textimg {
+    margin-top: 20px;
     max-width: 100%;
     min-width: 100%;
     width: 100%;
   }
 
   #topleftcontactdiv {
-    height: 100vw;
+    height: 70vw;
   }
 
   #addressbtndiv #textdiv {
     display: inline !important;
-    background-color: blueviolet;
     height: 100vw !important;
     width: 100%;
   }
@@ -752,6 +812,95 @@ svg {
 
 @media screen and (max-width: 385px) and (min-width: 320px) {
   /* ********** */
+
+  #topflex {
+    display: block;
+  }
+
+  #topleftdiv {
+    width: 100%;
+  }
+
+  .circletopright {
+    display: none;
+  }
+
+  #topleftimg {
+    height: 100vw;
+    margin-right: 23%;
+  }
+
+  #circleindex {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 85px;
+  }
+
+  /* ***** ContactNumber and addressdiv  *****  */
+
+  #contactnumberdiv {
+    display: inline-block;
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  #contact {
+    /* background-color: aquamarine; */
+    max-width: 100%;
+    min-width: 100%;
+    margin-left: 0px !important;
+    display: block;
+  }
+
+  #addressbtndiv {
+    display: inline !important;
+  }
+
+  #btndiv {
+    display: inline-block !important  ;
+    width: 100%;
+  }
+
+  #textimg {
+    margin-top: 20px;
+    max-width: 100%;
+    min-width: 100%;
+    width: 80%;
+  }
+
+  #topleftcontactdiv {
+    height: 100vw;
+  }
+
+  #addressbtndiv #textdiv {
+    display: inline !important;
+    height: 100vw !important;
+    width: 100%;
+  }
+
+  /* ******* TOp right div */
+  #toprightdiv {
+    max-width: 100%;
+    min-width: 100%;
+    height: 300px;
+  }
+
+  /* *********** */
+
+  .circletopleft {
+    border: none;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 30px;
+    height: 85vw;
+  }
 
   #cardDiv {
     display: flex;

@@ -9,12 +9,18 @@ function topleftcontact() {
     <>
       <div id="topleftcontactdiv">
         <div>
-          <img
-            src={contactNumber}
-            id="contact"
-            height="40px"
-            width="180px"
-          ></img>
+          <div id="contactnumberdiv">
+            <img
+              src={contactNumber}
+              id="contact"
+              height="40px"
+              width="180px"
+            ></img>
+            <div id="textdiv1" class="sidetextdiv">
+              <img src={textData} id="textimg" height="50px" width="80%"></img>
+            </div>
+          </div>
+
           <div id="addressbtndiv">
             <div id="btndiv">
               <img
@@ -24,7 +30,7 @@ function topleftcontact() {
                 width="150px"
               ></img>
             </div>
-            <div id="textdiv">
+            <div id="textdiv" class="belowtext">
               <img src={textData} id="textimg" height="50px" width="80%"></img>
             </div>
           </div>
