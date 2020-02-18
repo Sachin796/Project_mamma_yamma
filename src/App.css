@@ -206,11 +206,15 @@ svg {
     width: 100%;
     /* display: none; */
   }
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 30px;
+  }
 }
 
 /* **************************************************** */
 
-@media screen and (max-width: 1920px) and (min-width: 1441px) {
+@media screen and (max-width: 1920px) and (min-width: 1440px) {
   #maindiv {
     height: auto;
   }
@@ -222,11 +226,49 @@ svg {
     width: 100%;
     /* display: none; */
   }
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 30px;
+  }
 }
 
 /* **************************************************** */
 
 @media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .circletopleft {
+    border: none;
+    width: 15vw;
+    margin-top: 25px;
+    margin-left: 6vw;
+    margin-right: 0px;
+    height: 15vw;
+  }
+
+  .circletopleft img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .circletopright {
+    border: none;
+    max-width: 100%;
+    margin-top: 25px;
+    width: 15vw;
+    margin-left: 6vw;
+    height: 15vw;
+  }
+
+  .circletopright img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  #toprightdiv {
+    width: 600px;
+  }
+
   #maindiv {
     height: auto;
   }
@@ -259,6 +301,36 @@ svg {
 /* **************************************************** */
 
 @media screen and (max-width: 1200px) and (min-width: 1024px) {
+  .circletopleft {
+    border: none;
+    width: 16vw;
+    margin-top: 50px;
+    margin-left: 6vw;
+    margin-right: 0px;
+    height: 16vw;
+  }
+
+  .circletopleft img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .circletopright {
+    border: none;
+    max-width: 100%;
+    margin-top: 50px;
+    width: 16vw;
+    margin-left: 5vw;
+    height: 16vw;
+  }
+
+  .circletopright img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
   #maindiv {
     height: auto;
   }
@@ -327,6 +399,40 @@ svg {
 /* **************************************************** */
 
 @media screen and (max-width: 1024px) and (min-width: 900px) {
+  .circletopleft {
+    border: none;
+    width: 16vw;
+    margin-top: 50px;
+    margin-left: 6vw;
+    margin-right: 0px;
+    height: 16vw;
+  }
+
+  .circletopleft img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .circletopright {
+    border: none;
+    max-width: 100%;
+    margin-top: 50px;
+    width: 16vw;
+    margin-left: 5vw;
+    height: 16vw;
+  }
+
+  .circletopright img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  #toprightdiv {
+    width: 500px;
+  }
+
   /* #topflex {
     display: block !important;
   }
@@ -431,6 +537,36 @@ svg {
 
 /* Responsive for 600-900px */
 @media screen and (max-width: 900px) and (min-width: 768px) {
+  .circletopleft {
+    border: none;
+    width: 18vw;
+    margin-top: 50px;
+    margin-left: 4vw;
+    margin-right: 0px;
+    height: 18vw;
+  }
+
+  .circletopleft img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .circletopright {
+    border: none;
+    max-width: 100%;
+    margin-top: 50px;
+    width: 18vw;
+    margin-left: 4vw;
+    height: 18vw;
+  }
+
+  .circletopright img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
   #cardDiv {
     display: flex;
   }
@@ -521,6 +657,36 @@ svg {
     top: 10px;
   } */
 
+  .circletopleft {
+    border: none;
+    width: 19vw;
+    margin-top: 50px;
+    margin-left: 4vw;
+    margin-right: 0px;
+    height: 19vw;
+  }
+
+  .circletopleft img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .circletopright {
+    border: none;
+    max-width: 100%;
+    margin-top: 50px;
+    width: 19vw;
+    margin-left: 3vw;
+    height: 19vw;
+  }
+
+  .circletopright img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
   #cardDiv {
     display: flex;
   }
@@ -547,6 +713,36 @@ svg {
 
 /* Responsive for 451-600px */
 @media screen and (max-width: 600px) and (min-width: 451px) {
+  .circletopleft {
+    border: none;
+    width: 20vw;
+    margin-top: 50px;
+    margin-left: 3vw;
+    margin-right: 0px;
+    height: 20vw;
+  }
+
+  .circletopleft img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
+  .circletopright {
+    border: none;
+    max-width: 100%;
+    margin-top: 50px;
+    width: 20vw;
+    margin-left: 2vw;
+    height: 20vw;
+  }
+
+  .circletopright img {
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+
   #cardDiv {
     display: flex;
   }
