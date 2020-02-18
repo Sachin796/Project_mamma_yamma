@@ -35,6 +35,10 @@ body {
   width: 100%;
 }
 
+#backpart {
+  background-color: rgb(255, 217, 0);
+  height: 100%;
+}
 .circletopleft {
   position: relative;
   border: 1px solid black;
@@ -43,6 +47,17 @@ body {
   margin-top: 40px;
   margin-left: 10vw;
   width: 12vw;
+}
+
+#backimage {
+  margin-left: 38%;
+  margin-top: 15%;
+}
+
+#backimage1 {
+  width: 80%;
+  margin-left: 21px;
+  margin-top: 10%;
 }
 
 .circletopright {
@@ -163,6 +178,16 @@ svg {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+}
+
+#toprightborder {
+  /* transform: rotateX(70deg);
+  transform: rotateY(20deg); */
+}
+
+#bd {
+  border-top: 2px solid black;
+  margin-top: 10vh;
 }
 
 #backpart {
@@ -549,7 +574,14 @@ svg {
 @media screen and (max-width: 768px) and (min-width: 600px) {
   #buttonaddress {
     margin-top: 0px !important;
-    margin-left: 10px;
+    margin-left: 110px;
+  }
+
+  #topleftcontactdiv {
+    height: auto;
+    display: flex;
+    border: 1px solid black;
+    height: 42%;
   }
 
   #topleftimg {
@@ -636,6 +668,28 @@ svg {
     margin-left: 3vw;
     margin-right: 0px;
     height: 20vw;
+  }
+
+  #topleftimg {
+    display: flex;
+    height: 50%;
+  }
+
+  #topleftcontactdiv {
+    height: auto;
+    display: flex;
+    border: 1px solid black;
+    height: 50%;
+  }
+
+  #textdiv {
+    margin-left: 30px;
+  }
+
+  #addressbtndiv {
+    display: inline-block;
+    position: relative;
+    top: 30px;
   }
 
   .circletopleft img {

@@ -1,5 +1,6 @@
 import React from "react";
 import Circle from "../navigation/index";
+import ImageBorder from "../images/circular_around_top_righ_div.png";
 import toprightimage from "../images/topright.png";
 
 function toprightdiv() {
@@ -14,6 +15,13 @@ function toprightdiv() {
   return (
     <>
       {/* <Circle vertice={vertices} className="circle" id="toprightdiv"> */}
+
+      {/* <img
+        src={ImageBorder}
+        id="toprightborder"
+        height="600px"
+        width="700px"
+      ></img> */}
       <img
         src={toprightimage}
         height="400px"
