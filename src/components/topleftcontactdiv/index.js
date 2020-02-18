@@ -37,14 +37,14 @@ function topleftcontact() {
             </div>
           </div>
         </div>
-        {/* <div id="social_icons">
+        <div id="social_icons">
           <div id="facebook">
             <img src={facebook} id="facebookimg"></img>
           </div>
           <div id="instagram">
             <img src={instagram} id="instagramimg"></img>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
