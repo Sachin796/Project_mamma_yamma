@@ -2,6 +2,8 @@ import React from "react";
 import button from "../images/button.png";
 import textData from "../images/address.png";
 import socialicons from "../images/socialmedia.png";
+import instagram from "../images/Instagram.png";
+import facebook from "../images/Facebook.png";
 import contactNumber from "../images/contactnumber.png";
 
 function topleftcontact() {
@@ -36,7 +38,12 @@ function topleftcontact() {
           </div>
         </div>
         {/* <div id="social_icons">
-          <img src={socialicons} id="socialicons"></img>
+          <div id="facebook">
+            <img src={facebook} id="facebookimg"></img>
+          </div>
+          <div id="instagram">
+            <img src={instagram} id="instagramimg"></img>
+          </div>
         </div> */}
       </div>
     </>

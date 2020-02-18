@@ -36,7 +36,12 @@ function Card(props) {
               ></img>
             </div>
             <div id="bd">
-              <img src={backImg} height="30px" width="100%"></img>
+              <img
+                src={backImg}
+                id="backbottomimg"
+                height="30px"
+                width="100%"
+              ></img>
             </div>
             {/* <div id="cardimg"> */}
             {/* <p id="backimgdiv">hello<img src={Image}></img></p> */}
