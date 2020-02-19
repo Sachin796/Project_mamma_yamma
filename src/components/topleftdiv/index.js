@@ -6,12 +6,6 @@ function topleftdiv() {
   return (
     <>
       <div id="topleftdiv">
-        <div id="topbottom">
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-        </div>
-
         <Topleftimgdiv></Topleftimgdiv>
         <Topleftcontactdiv></Topleftcontactdiv>
       </div>

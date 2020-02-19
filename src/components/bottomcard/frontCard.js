@@ -43,9 +43,6 @@ function Card(props) {
                 width="100%"
               ></img>
             </div>
-            {/* <div id="cardimg"> */}
-            {/* <p id="backimgdiv">hello<img src={Image}></img></p> */}
-            {/* </div> */}
           </div>
         </div>
       </div>

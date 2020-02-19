@@ -18,34 +18,46 @@ body {
 
 #topbottom {
   display: flex;
+  position: relative;
+  width: 200px;
+  height: 30px;
+  animation: scroll 10s linear infinite;
 }
 
 /* Border image */
 
 #borderImg1 {
-  max-width: 100%;
+  /* max-width: 100%; */
   min-height: 100%;
-  height: 40px;
-  margin-bottom: 0px;
+  height: 30px;
+  margin-bottom: 0px !important;
   width: 100%;
+  float: left;
 }
 
-#topbottom {
-  animation: marquee 20s linear infinite;
-}
-@keyframes marquee {
+@keyframes scroll {
   0% {
-    left: 0;
+    left: 0px;
   }
   100% {
-    left: -100%;
+    left: -800px;
   }
+}
+
+#top_bottom_border {
+  background-color: blue;
+  display: flex;
 }
 
 #leftrightimg {
   max-width: 100%;
   min-height: 100%;
-  width: 12.8vw;
+  height: inherit;
+  width: 5.02vw;
+}
+
+#left_right_border {
+  height: 100%;
 }
 
 /* ******************* */
@@ -115,9 +127,14 @@ body {
 
 #topflex {
   display: flex;
-
+  margin-top: 0px !important;
   /* display: none; */
   height: auto;
+}
+
+#topborderdiv {
+  margin-bottom: 0px !important;
+  overflow: hidden;
 }
 
 #toprightdiv {
@@ -145,19 +162,23 @@ body {
 }
 #topleftimg {
   display: flex;
-  height: 55%;
+  height: 70%;
 }
 #topleftcontactdiv {
   display: flex;
   width: 99.9%;
   border: 1px solid black;
-  height: 35%;
+  height: 30%;
+}
+
+#belowtopleftcontactdiv {
+  height: 17vh;
 }
 
 #social_icons {
   border-left: 1px solid black;
   width: 13%;
-  height: 100%;
+  height: 99.9%;
 }
 
 #socialicons {
@@ -224,9 +245,10 @@ svg {
 
 #Cards {
   /* border: 1px solid black; */
-  height: 34vh;
+  height: 38vh;
   width: 16.657%;
   display: flex;
+  /* display: none; */
   flex-direction: column;
   transition: all 0.5s ease;
 }
@@ -242,14 +264,9 @@ svg {
   backface-visibility: hidden;
 }
 
-#toprightborder {
-  /* transform: rotateX(70deg);
-  transform: rotateY(20deg); */
-}
-
 #bd {
   border-top: 2px solid black;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 #backbottoming {
@@ -278,7 +295,7 @@ svg {
 #addressbtndiv {
   display: flex;
   position: relative;
-  top: 30px;
+  top: 10px;
 }
 
 #btndiv {
@@ -314,6 +331,7 @@ svg {
 
   #contactnumberdiv {
     margin-left: 15vw;
+
     display: flex;
   }
 

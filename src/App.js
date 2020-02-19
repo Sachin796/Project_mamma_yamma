@@ -10,15 +10,18 @@ class App extends Component {
     // const circletype = new CircleType(document.getElementById("toprightdiv"));
     // circletype.forceWidth(true);
     // TweenLite.set();
-    
   }
 
   render() {
     return (
       <>
-        <Router>
-          <Mainpage></Mainpage>
-        </Router>
+        {/* <Router>
+          <Route path="/" exact strict component={<Mainpage></Mainpage>}>
+            {/* <Router path="/info" exact strict component={}></Router> */}
+        {/* </Route> */}
+        {/* </Router> */}
+
+        <Mainpage></Mainpage>
       </>
     );
   }
