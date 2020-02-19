@@ -5,11 +5,40 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .App {
   text-align: center;
 }
+
+#topbottom {
+  display: flex;
+}
+
+/* Border image */
+
+#borderImg1 {
+  max-width: 100%;
+  min-height: 100%;
+  height: 40px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+#topbottom {
+  animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* ******************* */
 
 #maindiv {
   background-color: rgb(201, 198, 198);
@@ -76,6 +105,7 @@ body {
 
 #topflex {
   display: flex;
+
   /* display: none; */
   height: auto;
 }
@@ -105,7 +135,7 @@ body {
 }
 #topleftimg {
   display: flex;
-  height: 65%;
+  height: 55%;
 }
 #topleftcontactdiv {
   display: flex;
@@ -184,7 +214,7 @@ svg {
 
 #Cards {
   /* border: 1px solid black; */
-  height: 44.75vh;
+  height: 34vh;
   width: 16.657%;
   display: flex;
   flex-direction: column;
@@ -300,10 +330,10 @@ svg {
   .circletopleft {
     border: none;
     width: 15vw;
-    margin-top: 25px;
+    margin-top: 16px;
     margin-left: 6vw;
     margin-right: 0px;
-    height: 15vw;
+    height: 14vw;
   }
 
   #contactnumberdiv {
@@ -330,10 +360,6 @@ svg {
     max-width: 100%;
     min-height: 100%;
     width: 100%;
-  }
-
-  #toprightdiv {
-    width: 600px;
   }
 
   #maindiv {

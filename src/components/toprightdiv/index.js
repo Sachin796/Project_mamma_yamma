@@ -2,6 +2,7 @@ import React from "react";
 import Circle from "../navigation/index";
 import ImageBorder from "../images/circular_around_top_righ_div.png";
 import toprightimage from "../images/topright.png";
+import Topbottom from "../../components/border/top_bottom";
 
 function toprightdiv() {
   const vertices = [
@@ -22,13 +23,22 @@ function toprightdiv() {
         height="600px"
         width="700px"
       ></img> */}
-      <img
-        src={toprightimage}
-        height="400px"
-        width="700px"
-        className="imgcircle"
-        id="toprightdiv"
-      ></img>
+      <div id="toprightdiv">
+        <div>
+          <span id="topbottom">
+            <Topbottom></Topbottom>
+            <Topbottom></Topbottom>
+            <Topbottom></Topbottom>
+          </span>
+        </div>
+        <img
+          src={toprightimage}
+          height="383px"
+          width="700px"
+          className="imgcircle"
+        ></img>
+      </div>
+
       {/* </Circle> */}
     </>
   );
