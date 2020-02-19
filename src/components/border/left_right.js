@@ -1,9 +1,11 @@
 import React from "react";
 
-function LeftRight() {
+function LeftRight(props) {
   return (
     <>
-      <div id="left_right_border">Left</div>
+      <div id="left_right_border">
+        <img src={props.src} id="leftrightimg"></img>
+      </div>
     </>
   );
 }
