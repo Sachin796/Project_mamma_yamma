@@ -5,7 +5,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 #rootdiv {
@@ -177,7 +177,7 @@ body {
 
 #social_icons {
   border-left: 1px solid black;
-  width: 14%;
+  width: 10%;
   height: 99.9%;
 }
 
@@ -198,12 +198,17 @@ body {
 
 #facebookimg,
 #instagramimg {
-  height: 1.5vw;
+  height: 1.2vw;
   width: 1vw;
-  margin-top: 3.5vh;
-  margin-left: 1.8vh;
+  margin-top: 2.9vh;
+  margin-left: 2vh;
   min-width: 40%;
   max-height: 100%;
+}
+
+#backbottomimg {
+  margin-top: 2.27vh;
+  margin-left: 4vw;
 }
 
 /* #instagraming {
@@ -266,7 +271,7 @@ svg {
 
 #bd {
   border-top: 2px solid black;
-  margin-top: 20px;
+  margin-top: 7.7vh;
 }
 
 #backbottoming {

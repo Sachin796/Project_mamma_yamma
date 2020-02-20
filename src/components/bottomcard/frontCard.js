@@ -31,16 +31,16 @@ function Card(props) {
               <img
                 src={BackImage1}
                 id="backimage1"
-                height="50px"
-                width="50px"
+                height="25px"
+                width="45px"
               ></img>
             </div>
             <div id="bd">
               <img
                 src={backImg}
                 id="backbottomimg"
-                height="30px"
-                width="100%"
+                height="10px"
+                width="50%"
               ></img>
             </div>
           </div>
