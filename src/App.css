@@ -5,7 +5,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 #rootdiv {
@@ -177,7 +177,7 @@ body {
 
 #social_icons {
   border-left: 1px solid black;
-  width: 13%;
+  width: 14%;
   height: 99.9%;
 }
 
@@ -201,7 +201,7 @@ body {
   height: 1.5vw;
   width: 1vw;
   margin-top: 3.5vh;
-  margin-left: 3vh;
+  margin-left: 1.8vh;
   min-width: 40%;
   max-height: 100%;
 }
@@ -330,8 +330,6 @@ svg {
   }
 
   #contactnumberdiv {
-    margin-left: 15vw;
-
     display: flex;
   }
 
@@ -365,7 +363,6 @@ svg {
   }
 
   #contactnumberdiv {
-    margin-left: 15vw;
     display: flex;
   }
 
@@ -417,11 +414,24 @@ svg {
     position: relative;
     top: 10px;
   }
+  #leftrightimg {
+    max-width: 100%;
+    min-height: 100%;
+    height: inherit;
+    width: 7.02vw;
+  }
 }
 
 /* **************************************************** */
 
 @media screen and (max-width: 1200px) and (min-width: 1024px) {
+  #leftrightimg {
+    max-width: 100%;
+    min-height: 100%;
+    height: inherit;
+    width: 9.02vw;
+  }
+
   .circletopleft {
     border: none;
     width: 16vw;
@@ -462,7 +472,7 @@ svg {
   }
 
   #Cards {
-    width: 16.45%;
+    width: 16.665%;
   }
 
   #cardimg img {
@@ -510,6 +520,13 @@ svg {
     width: 100%;
   }
 
+  #leftrightimg {
+    max-width: 100%;
+    min-height: 100%;
+    height: inherit;
+    width: 11.02vw;
+  }
+
   .circletopright {
     border: none;
     max-width: 100%;
@@ -535,7 +552,7 @@ svg {
   }
 
   #Cards {
-    width: 16.4%;
+    width: 16.667%;
   }
 
   #cardimg img {
@@ -559,16 +576,19 @@ svg {
 
   #textimg {
     height: 40px;
-    margin-top: 3vh;
+
     margin-left: 40px;
     width: 80%;
   }
 
   #contact {
-    /* margin-bottom: 0px !important; */
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 0px;
     margin-left: 15vw;
+  }
+
+  #social_icons {
+    width: 16%;
   }
 
   #addressbtndiv {
@@ -589,6 +609,13 @@ svg {
     margin-left: 4vw;
     margin-right: 0px;
     height: 18vw;
+  }
+
+  #leftrightimg {
+    max-width: 100%;
+    min-height: 100%;
+    height: inherit;
+    width: 13.02vw;
   }
 
   #topleftimg {
@@ -633,7 +660,7 @@ svg {
   }
 
   #Cards {
-    width: 32.87%;
+    width: 33.31%;
   }
 
   #Cards {
@@ -670,6 +697,16 @@ svg {
     top: 10px;
     text-align: center;
   }
+
+  #facebookimg,
+  #instagramimg {
+    height: 2.5vw;
+    width: 1vw;
+    margin-top: 5.5vh;
+    margin-left: 1.3vh;
+    min-width: 50%;
+    max-height: 100%;
+  }
 }
 
 /* ******************************** */
@@ -688,9 +725,30 @@ svg {
     height: 42%;
   }
 
+  #leftrightimg {
+    max-width: 100%;
+    min-height: 100%;
+    height: inherit;
+    width: 18.02vw;
+  }
+
+  #social_icons {
+    width: 18.5%;
+  }
+
   #topleftimg {
     display: flex;
     height: 58%;
+  }
+
+  #facebookimg,
+  #instagramimg {
+    height: 2.5vw;
+    width: 1vw;
+    margin-top: 5.5vh;
+    margin-left: 1.3vh;
+    min-width: 50%;
+    max-height: 100%;
   }
 
   #contact {
@@ -748,7 +806,7 @@ svg {
   }
 
   #Cards {
-    width: 32.87%;
+    width: 33.32%;
   }
 
   #Cards {
@@ -774,6 +832,33 @@ svg {
     height: 20vw;
   }
 
+  #leftrightimg {
+    max-width: 100%;
+    min-height: 100%;
+    height: inherit;
+    width: 35.02vw;
+  }
+
+  #contact {
+    margin-bottom: 0px !important;
+    padding-top: 12px;
+    margin-left: 20px;
+  }
+
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 20px;
+  }
+
+  #textimg {
+    height: 8vh;
+    width: 35vw;
+    margin-left: 0px !important;
+  }
+
+  #social_icons {
+    display: none;
+  }
   #topleftimg {
     display: flex;
     height: 50%;
@@ -806,9 +891,18 @@ svg {
     border: none;
     max-width: 100%;
     margin-top: 50px;
-    width: 20vw;
+    width: 17vw;
     margin-left: 2vw;
-    height: 20vw;
+    height: 17vw;
+  }
+
+  .circletopleft {
+    border: none;
+    width: 17vw;
+    margin-top: 50px;
+    margin-left: 3vw;
+    margin-right: 0px;
+    height: 17vw;
   }
 
   .circletopright img {
@@ -822,7 +916,7 @@ svg {
   }
 
   #Cards {
-    width: 32.87%;
+    width: 33.33%;
   }
 
   #cardimg img {
@@ -857,6 +951,34 @@ svg {
   #buttonaddress {
     margin-top: 0px !important;
     margin-left: 140px;
+  }
+
+  #leftrightimg {
+    max-width: 100%;
+    min-height: 100%;
+    height: inherit;
+    width: 100.02vw;
+  }
+
+  #contact {
+    margin-bottom: 0px !important;
+    padding-top: 12px;
+    margin-left: 20px;
+  }
+
+  #buttonaddress {
+    margin-top: 0px !important;
+    margin-left: 20px;
+  }
+
+  #textimg {
+    height: 8vh;
+    width: 35vw;
+    margin-left: 0px !important;
+  }
+
+  #social_icons {
+    display: none;
   }
 
   .sidetextdiv {
