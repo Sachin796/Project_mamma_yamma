@@ -6,6 +6,29 @@ import instagram from "../images/Instagram.png";
 import facebook from "../images/Facebook.png";
 import contactNumber from "../images/contactnumber.png";
 
+const update = () => {
+  var divfb = document.getElementById("facebook").style;
+  var divinsta = document.getElementById("instagram").style;
+  var instaimg = document.getElementById("instagramimg").style;
+  var facebookimg = document.getElementById("facebookimg").style;
+
+  console.log(instaimg);
+  console.log(facebookimg);
+
+  if (divfb.backgroundColor === "white") {
+    divfb.cssText = "background-color:black";
+    facebookimg.cssText = "background-color:white";
+  } else {
+    divfb.cssText = "background-color:white";
+  }
+
+  if (divinsta.backgroundColor === "black") {
+    divinsta.cssText = "background-color:white";
+  } else {
+    divinsta.cssText = "background-color:black";
+  }
+};
+
 function topleftcontact() {
   return (
     <>
@@ -38,10 +61,18 @@ function topleftcontact() {
           </div>
         </div>
         <div id="social_icons">
-          <div id="facebook">
+          <div
+            id="facebook"
+            style={{ backgroundColor: "white" }}
+            onClick={update}
+          >
             <img src={facebook} id="facebookimg"></img>
           </div>
-          <div id="instagram">
+          <div
+            id="instagram"
+            style={{ backgroundColor: "black" }}
+            onClick={update}
+          >
             <img src={instagram} id="instagramimg"></img>
           </div>
         </div>

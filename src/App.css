@@ -21,6 +21,7 @@ body {
   position: relative;
   width: 200px;
   height: 30px;
+  z-index: 1;
   animation: scroll 10s linear infinite;
 }
 
@@ -52,7 +53,8 @@ body {
 #leftrightimg {
   max-width: 100%;
   min-height: 100%;
-  height: inherit;
+  height: 15vh;
+  z-index: -1;
   width: 5.02vw;
 }
 
@@ -187,12 +189,12 @@ body {
 }
 
 #instagram {
-  background-color: black;
+  /* background-color: black; */
   height: 50%;
 }
 
 #facebook {
-  background-color: white;
+  /* background-color: white; */
   height: 50%;
 }
 

@@ -17,20 +17,20 @@ function bottomdiv() {
         <Card src={image4} className="imgcircle"></Card>
         <Card src={image5} className="imgcircle"></Card>
         <Card src={image6} className="imgcircle"></Card>
-        <div id="topbottom">
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-          <Topbottom></Topbottom>
-        </div>
+      </div>
+      <div id="topbottom">
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
+        <Topbottom></Topbottom>
       </div>
     </>
   );
