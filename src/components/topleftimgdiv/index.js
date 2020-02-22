@@ -2,7 +2,7 @@ import React from "react";
 import Circle from "../circle/index";
 import CircleRight from "../circle/circletopright";
 import logo from "./image1.jpg";
-import logo1 from "../images/topleft.png";
+import logo1 from "../images/topleft_noeyes.png";
 function topimage() {
   return (
     <>
