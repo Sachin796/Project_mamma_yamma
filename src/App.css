@@ -12,6 +12,38 @@ body {
   display: flex;
 }
 
+#backimgsection {
+  margin-top: 50px;
+  height: 30%;
+  /* background-color: aquamarine; */
+}
+
+#backimg {
+  max-height: 100%;
+  background-size: cover;
+  margin-left: 37vw;
+}
+
+#backtextsection {
+  height: 50%;
+}
+
+#backtext {
+  margin-left: 15vw;
+  margin-top: 30px;
+  height: 50vh;
+}
+
+#middiv {
+  width: 100%;
+}
+
+#rootdiv1 {
+  height: 90vh;
+  display: flex;
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
@@ -52,14 +84,14 @@ body {
 
 #leftrightimg {
   max-width: 100%;
-  min-height: 100%;
+  /* max-height: 100vh; */
+
   height: 10vh;
   z-index: -1;
   width: 5.02vw;
-  /* background-color: yellow; */
   background-image: url("components/images/leftmargin.png");
   background-size: cover;
-  background-repeat: repeat;
+  /* background-repeat: repeat; */
 }
 
 #left_right_border {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Mainpage from "./pages/index";
+import Inforpage from "./components/infopage/index";
 import "./App.css";
 import { TweenLite, TimelineMax, Linear, Back, Sine } from "gsap/all";
 import CircleType from "circletype";
@@ -15,13 +16,20 @@ class App extends Component {
   render() {
     return (
       <>
-        {/* <Router>
-          <Route path="/" exact strict component={<Mainpage></Mainpage>}>
-            {/* <Router path="/info" exact strict component={}></Router> */}
-        {/* </Route> */}
-        {/* </Router> */}
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Mainpage></Mainpage>
+            </Route>
+            <Route path="/about" exact>
+              <Inforpage></Inforpage>
+            </Route>
+          </Switch>
 
-        <Mainpage></Mainpage>
+          {/* <Route path="/" exact strict component={<Mainpage></Mainpage>}> */}
+          {/* <Router path="/info" exact strict component={}></Router>
+        {/* </Route> */}
+        </Router>
       </>
     );
   }
