@@ -9,14 +9,14 @@ function Mainpage() {
   return (
     <>
       <div id="rootdiv">
-        <div>
+        <div className="lrroot">
           <LeftRightBorder src={LeftBorder}></LeftRightBorder>
         </div>
         <div id="maindiv">
           <Topdiv></Topdiv>
           <Bottomdiv></Bottomdiv>
         </div>
-        <div>
+        <div className="lrroot">
           <LeftRightBorder src={RightBorder}></LeftRightBorder>
         </div>
       </div>
