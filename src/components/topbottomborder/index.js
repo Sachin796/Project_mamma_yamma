@@ -3,20 +3,14 @@ import Topbottom from "../border/top_bottom";
 function TopBottomBorder() {
   return (
     <>
-      <span id="topbottom">
+      <div id="topbottom">
         <Topbottom></Topbottom>
         <Topbottom></Topbottom>
         <Topbottom></Topbottom>
         <Topbottom></Topbottom>
         <Topbottom></Topbottom>
         <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-      </span>
+      </div>
     </>
   );
 }

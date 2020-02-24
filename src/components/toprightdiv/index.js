@@ -16,21 +16,7 @@ function toprightdiv() {
   return (
     <>
       {/* <Circle vertice={vertices} className="circle" id="toprightdiv"> */}
-
-      {/* <img
-        src={ImageBorder}
-        id="toprightborder"
-        height="600px"
-        width="700px"
-      ></img> */}
       <div id="toprightdiv">
-        {/* <div>
-          <span id="topbottom">
-            <Topbottom></Topbottom>
-            <Topbottom></Topbottom>
-            <Topbottom></Topbottom>
-          </span>
-        </div> */}
         <img
           src={toprightimage}
           height="382px"
