@@ -3,23 +3,29 @@ import button from "../images/button.png";
 import textData from "../images/address.png";
 import socialicons from "../images/socialmedia.png";
 import instagram from "../images/Instagram.png";
+import Instanew from "../images/inst_black.png";
+import FacebookNew from "../images/facebook_white.png";
 import facebook from "../images/Facebook.png";
 import contactNumber from "../images/contactnumber.png";
 
 const update = () => {
   var divfb = document.getElementById("facebook").style;
   var divinsta = document.getElementById("instagram").style;
-  var instaimg = document.getElementById("instagramimg").style;
-  var facebookimg = document.getElementById("facebookimg").style;
+  var instaimg = document.getElementById("instagramimg");
+  var facebookimg = document.getElementById("facebookimg");
 
-  console.log(instaimg);
-  console.log(facebookimg);
+  console.log(Instanew.toString());
+  console.log(facebookimg.src);
 
   if (divfb.backgroundColor === "white") {
     divfb.cssText = "background-color:black";
     facebookimg.cssText = "background-color:white";
+    instaimg.src = Instanew.toString();
+    facebookimg.src = FacebookNew.toString();
   } else {
     divfb.cssText = "background-color:white";
+    instaimg.src = instagram.toString();
+    facebookimg.src = facebook.toString();
   }
 
   if (divinsta.backgroundColor === "black") {

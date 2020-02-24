@@ -168,6 +168,13 @@ body {
   overflow: hidden;
 }
 
+#topborderdiv1 {
+  position: absolute;
+  margin-top: 90vh;
+  margin-bottom: 0px !important;
+  /* overflow: hidden; */
+}
+
 #toprightdiv {
   width: 49.7%;
 }
@@ -1191,7 +1198,7 @@ svg {
   }
 
   #left_right_border {
-    /* height: 100vh; */
+    height: 100vh;
   }
 
   /* ***** ContactNumber and addressdiv  *****  */
