@@ -9,9 +9,9 @@ function Mainpage() {
   return (
     <>
       <div id="rootdiv">
-        <div className="lrroot">
-          <LeftRightBorder src={LeftBorder}></LeftRightBorder>
-        </div>
+        {/* <div className="lrroot"> */}
+        <LeftRightBorder src={LeftBorder}></LeftRightBorder>
+        {/* </div> */}
         <div id="maindiv">
           <Topdiv></Topdiv>
           <Bottomdiv></Bottomdiv>

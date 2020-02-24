@@ -25,10 +25,6 @@ class App extends Component {
               <Inforpage></Inforpage>
             </Route>
           </Switch>
-
-          {/* <Route path="/" exact strict component={<Mainpage></Mainpage>}> */}
-          {/* <Router path="/info" exact strict component={}></Router>
-        {/* </Route> */}
         </Router>
       </>
     );

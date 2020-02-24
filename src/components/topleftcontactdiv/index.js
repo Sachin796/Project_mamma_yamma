@@ -29,6 +29,10 @@ const update = () => {
   }
 };
 
+const changePage = () => {
+  window.location.pathname = "/about";
+};
+
 function topleftcontact() {
   return (
     <>
@@ -53,6 +57,7 @@ function topleftcontact() {
                 id="buttonaddress"
                 height="50px"
                 width="150px"
+                onClick={changePage}
               ></img>
             </div>
             <div id="textdiv" class="belowtext">

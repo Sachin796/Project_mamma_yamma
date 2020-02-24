@@ -7,9 +7,9 @@ function Circle(props) {
   return (
     <>
       <div className={props.className}>
+        <img src={props.src} className="imgcircle"></img>
         <div id="lefteb" className="leftebclass"></div>
         <div id="righteb" className="rightebclass"></div>
-        <img src={props.src} className="imgcircle"></img>
         {/* <SvgComponent></SvgComponent> */}
       </div>
     </>

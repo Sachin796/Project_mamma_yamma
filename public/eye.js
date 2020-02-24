@@ -2,7 +2,7 @@ var eyeballs = document.getElementsByClassName("leftebclass");
 var eyeballsr = document.getElementsByClassName("rightebclass");
 document.onmousemove = function(event) {
   var x = (event.clientX * 120) / window.innerWidth - 135 + "%";
-  var y = (event.clientY * 120) / window.innerHeight - 40 + "%";
+  var y = (event.clientY * 120) / window.innerHeight - 66 + "%";
   console.log(x, y);
   //event.clientX => get the horizontal coordinate of the mouse
   //event.clientY => get the Vertical coordinate of the mouse
