@@ -1,22 +1,18 @@
 import React from "react";
-import Topleftimgdiv from "../topleftimgdiv/index";
-import LeftRightBorder from "../border/left_right";
-import Topdiv from "../topdiv/index";
-import Bottomdiv from "../bottomdiv/index";
+import LeftRightBorder from "../border/leftrightborder";
 import Text from "../images/infopagetext.png";
 import Backimg from "../images/infopageimg1.png";
-import LeftBorder from "../images/border/border2_left.png";
-import RightBorder from "../images/border/border2_right.png";
-import Topleftcontactdiv from "../topleftcontactdiv/index";
+import LeftBorder from "../images/border/infopage_left.png";
+import RightBorder from "../images/border/infopage_right.png";
 import TopBottomBorder from "../topbottomborder/index";
 function InfoPage() {
   return (
     <>
       <TopBottomBorder></TopBottomBorder>
       <div id="rootdiv1">
-        <div className="lrroot">
-          <LeftRightBorder src={LeftBorder}></LeftRightBorder>
-        </div>
+        {/* <div className="lrroot"> */}
+        <LeftRightBorder src={LeftBorder}></LeftRightBorder>
+        {/* </div> */}
         <div id="middiv">
           <section id="backimgsection">
             <img src={Backimg} id="backimg"></img>

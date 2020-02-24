@@ -15,13 +15,12 @@ body {
 #backimgsection {
   margin-top: 50px;
   height: 30%;
-  /* background-color: aquamarine; */
 }
 
 #backimg {
   max-height: 100%;
   background-size: cover;
-  margin-left: 37vw;
+  margin-left: 44.5vw;
 }
 
 #backtextsection {
@@ -29,7 +28,7 @@ body {
 }
 
 #backtext {
-  margin-left: 15vw;
+  margin-left: 22vw;
   margin-top: 30px;
   height: 50vh;
 }
@@ -39,7 +38,7 @@ body {
 }
 
 #rootdiv1 {
-  height: 90vh;
+  height: 91.4vh;
   display: flex;
   background-color: black;
 }
@@ -88,6 +87,17 @@ body {
   height: 96vh;
   z-index: -1;
   width: 4vw;
+  background-image: url("components/images/leftmargin.png");
+  background-size: cover;
+  /* background-repeat: repeat; */
+}
+
+#leftrightimg1 {
+  max-width: 100%;
+  margin-top: 0vh;
+  height: 92vh;
+  z-index: -1;
+  width: 2vw;
   background-image: url("components/images/leftmargin.png");
   background-size: cover;
   /* background-repeat: repeat; */
@@ -268,9 +278,6 @@ body {
   margin-left: 4vw;
 }
 
-/* #instagraming {
-} */
-
 #topleftcontactdiv h2 {
   word-wrap: break-word;
   position: relative;
@@ -307,11 +314,9 @@ svg {
 }
 
 #Cards {
-  /* border: 1px solid black; */
   height: 38vh;
   width: 16.657%;
   display: flex;
-  /* display: none; */
   flex-direction: column;
   transition: all 0.5s ease;
 }
@@ -481,7 +486,7 @@ svg {
     max-width: 100%;
     min-height: 100%;
     height: inherit;
-    width: 7.02vw;
+    width: 2.02vw;
   }
 }
 
