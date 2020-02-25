@@ -45,15 +45,14 @@ function topleftcontact() {
       <div id="topleftcontactdiv">
         <div id="belowtopleftcontactdiv">
           <div id="contactnumberdiv">
-            <img
+            {/* <img
               src={contactNumber}
               id="contact"
               height="40px"
               width="180px"
-            ></img>
-            <div id="textdiv1" class="sidetextdiv">
-              <img src={textData} id="textimg" height="50px" width="80%"></img>
-            </div>
+            ></img> */}
+            <h2 id="contact"> +8(985) 788-85-78</h2>
+            <div id="textdiv1" class="sidetextdiv"></div>
           </div>
 
           <div id="addressbtndiv">
@@ -61,13 +60,18 @@ function topleftcontact() {
               <img
                 src={button}
                 id="buttonaddress"
-                height="50px"
-                width="150px"
+                height="30px"
+                width="auto"
                 onClick={changePage}
               ></img>
             </div>
             <div id="textdiv" class="belowtext">
-              <img src={textData} id="textimg" height="50px" width="80%"></img>
+              {/* <img src={textData} id="textimg" height="50px" width="80%"></img> */}
+              <p id="textimg">
+                Без глютена, яиц, молока, животных жиров,
+                мёда,красителей,консерантов,стабилизаторов и усилителей вкуса.
+                &#174; Mommy Yummy / 2020-Москва
+              </p>
             </div>
           </div>
         </div>
@@ -77,14 +81,14 @@ function topleftcontact() {
             style={{ backgroundColor: "white" }}
             onClick={update}
           >
-            <img src={facebook} id="facebookimg"></img>
+            {/* <img src={facebook} id="facebookimg"></img> */}
           </div>
           <div
             id="instagram"
             style={{ backgroundColor: "black" }}
             onClick={update}
           >
-            <img src={instagram} id="instagramimg"></img>
+            {/* <img src={instagram} id="instagramimg"></img> */}
           </div>
         </div>
       </div>
