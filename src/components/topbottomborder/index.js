@@ -3,14 +3,7 @@ import Topbottom from "../border/top_bottom";
 function TopBottomBorder() {
   return (
     <>
-      <div id="topbottom">
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-        <Topbottom></Topbottom>
-      </div>
+      <div id="topbottom">{/* <Topbottom></Topbottom> */}</div>
     </>
   );
 }

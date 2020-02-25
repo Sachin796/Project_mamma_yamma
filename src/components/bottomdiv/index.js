@@ -18,9 +18,7 @@ function bottomdiv() {
         <Card src={image5} className="imgcircle"></Card>
         <Card src={image6} className="imgcircle"></Card>
       </div>
-      <div>
-        <TopBottomBorder></TopBottomBorder>
-      </div>
+      <div id="topbottom1"></div>
     </>
   );
 }
