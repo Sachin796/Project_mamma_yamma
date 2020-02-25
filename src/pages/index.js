@@ -2,6 +2,7 @@ import React from "react";
 import Topdiv from "../components/topdiv/index";
 import Bottomdiv from "../components/bottomdiv/index";
 import LeftRightBorder from "../components/border/left_right";
+import LRBorder from "../components/border/leftrightborder";
 import LeftBorder from "../components/images/border/border2_left.png";
 import RightBorder from "../components/images/border/border2_right.png";
 
@@ -17,7 +18,7 @@ function Mainpage() {
           <Bottomdiv></Bottomdiv>
         </div>
         <div className="lrroot">
-          <LeftRightBorder src={RightBorder}></LeftRightBorder>
+          <LRBorder src={RightBorder}></LRBorder>
         </div>
       </div>
     </>

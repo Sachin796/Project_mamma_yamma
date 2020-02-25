@@ -91,19 +91,20 @@ body {
   left: 0;
   top: 4%;
   /* margin-top: 4vh; */
-  height: 92%;
-  /* z-index: -1; */
+  height: 92vh;
+  z-index: 1;
   width: 30px;
   background-image: url("components/images/leftmargin.png");
   background-size: cover;
 }
 
 #leftrightimg1 {
-  max-width: 100%;
-  margin-top: 0vh;
+  position: fixed;
+  right: 0;
+  top: 4%;
   height: 92vh;
-  z-index: -1;
-  width: 2vw;
+  z-index: 1;
+  width: 30px;
   background-image: url("components/images/leftmargin.png");
   background-size: cover;
   /* background-repeat: repeat; */
@@ -724,8 +725,8 @@ svg {
   #leftrightimg {
     max-width: 100%;
     min-height: 100%;
-    height: inherit;
-    width: 13.02vw;
+    /* height: inherit;
+    width: 13.02vw; */
   }
 
   #topleftimg {
