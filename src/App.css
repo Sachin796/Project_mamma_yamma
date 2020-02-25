@@ -86,11 +86,9 @@ body {
 }
 
 #leftrightimg {
-  /* max-width: 100%; */
   position: fixed;
   left: 0;
   top: 4%;
-  /* margin-top: 4vh; */
   height: 92vh;
   z-index: 1;
   width: 30px;
@@ -488,10 +486,10 @@ svg {
     top: 10px;
   }
   #leftrightimg {
-    max-width: 100%;
+    /* max-width: 100%;
     min-height: 100%;
-    height: inherit;
-    width: 7.22vw;
+    height: inherit; */
+    /* width: 7.22vw; */
   }
 
   #lefteb {
