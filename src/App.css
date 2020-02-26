@@ -20,7 +20,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: visible;
 }
 
 #rootdiv1 {
@@ -184,14 +184,14 @@ body {
 }
 
 #backimage {
-  margin-left: 38%;
-  margin-top: 15%;
+  margin-left: 42%;
+  margin-top: 10%;
 }
 
 #backimage1 {
   width: 80%;
   margin-left: 21px;
-  margin-top: 10%;
+  margin-top: 13%;
 }
 
 .circletopright {
@@ -383,10 +383,11 @@ svg {
 
 #bd {
   border-top: 2px solid black;
-  margin-top: 7.7vh;
+  margin-top: 0.7vh;
 }
 
 #backbottoming {
+  margin-top: 1.5vh;
   margin: 10px;
 }
 
@@ -450,10 +451,29 @@ svg {
     display: flex;
   }
 
+  #frontimgdiv {
+    height: 24vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  }
+
+  #fronttext {
+    overflow: hidden;
+    word-break: break-all;
+    border: 1px solid black;
+  }
+
+  #fronttext h5 {
+    padding-top: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
   #x {
     position: relative;
     top: 76.8px;
-
     height: 20px;
     overflow: hidden;
   }
@@ -487,7 +507,7 @@ svg {
   }
   #buttonaddress {
     margin-top: 0px !important;
-    margin-left: 3 vw;
+    margin-left: 3vw;
   }
   #textimg {
     height: 40px;
@@ -512,6 +532,22 @@ svg {
     margin-left: 6vw;
     margin-right: 0px;
     height: 14vw;
+  }
+
+  #frontimgdiv {
+    height: 23.4vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  }
+
+  #fronttext {
+    border: 1px solid black;
+  }
+
+  #fronttext h5 {
+    padding: 2%;
   }
 
   #contactnumberdiv {
@@ -681,6 +717,14 @@ svg {
     top: 10px;
   }
 
+  #frontimgdiv {
+    height: 20vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  }
+
   #x {
     /* border: 3px solid darkblue; */
     position: relative;
@@ -804,6 +848,14 @@ svg {
     position: relative;
     top: 10px;
   }
+
+  /* #frontimgdiv {
+    height: 22vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  } */
 }
 
 /* **************************************************** */
@@ -937,6 +989,14 @@ svg {
     top: -118px;
     left: 82px;
   }
+
+  /* #frontimgdiv {
+    height: 22vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  } */
 }
 
 /* ******************************** */
@@ -1086,6 +1146,14 @@ svg {
     top: -1.75vh !important;
     border-radius: 50%;
   }
+
+  /* #frontimgdiv {
+    height: 22vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  } */
 }
 
 /* Responsive for 451-600px */
@@ -1195,6 +1263,14 @@ svg {
     max-width: 100%;
     min-height: 100%;
   }
+
+  /* #frontimgdiv {
+    height: 22vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  } */
 }
 
 /* **************************************************** */
@@ -1359,6 +1435,14 @@ svg {
     top: -33.3vh !important;
     border-radius: 50%;
   }
+
+  /* #frontimgdiv {
+    height: 22vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  } */
 }
 
 @media screen and (max-width: 385px) and (min-width: 320px) {
@@ -1519,6 +1603,14 @@ svg {
   #social_icons {
     display: none;
   }
+
+  /* #frontimgdiv {
+    height: 22vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  } */
 }
 
 @media screen and (max-width: 320px) and (min-width: 250px) {
@@ -1548,4 +1640,12 @@ svg {
     top: -25vh !important;
     border-radius: 50%;
   }
+
+  /* #frontimgdiv {
+    height: 22vh;
+  }
+
+  #frontcardimg {
+    height: 100%;
+  } */
 }

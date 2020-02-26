@@ -9,7 +9,17 @@ function Card(props) {
         <div id="section1">
           <div id="frontpart">
             <div id="cardimg" className="circleBottom">
-              <img src={props.src} id={props.id}></img>
+              <div id="imgandtext">
+                <div id="frontimgdiv">
+                  <img src={props.src} id="frontcardimg"></img>
+                </div>
+                <div id="fronttext">
+                  <h5>
+                    Без глютена, яиц, молока животных жиров, мёда, красителей,
+                    конс
+                  </h5>
+                </div>
+              </div>
             </div>
             {/* <div id="cardTextContent">
               "Cupcake ipsum dolor sit. Amet I love liquorice jujubes pudding
@@ -22,8 +32,8 @@ function Card(props) {
                 <img
                   src={Image}
                   id="backimage"
-                  height="80px"
-                  width="60px"
+                  height="70px"
+                  width="50px"
                 ></img>
               </div>
             </div>
