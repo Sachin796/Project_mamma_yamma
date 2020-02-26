@@ -47,9 +47,41 @@ body {
 }
 
 #backtext {
-  margin-left: 19vw;
+  /* margin-left: 19vw; */
+  overflow: hidden;
   margin-top: 30px;
   height: 50vh;
+}
+
+#text1 {
+  height: 10vh;
+  text-align: center;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+}
+
+#text2 {
+  height: 25vh;
+  text-align: center;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+}
+
+#text3 {
+  height: 17vh;
+  text-align: center;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+}
+
+#text1,
+#text2,
+#text3 > h5 {
+  color: aquamarine;
+  font-size: 30px;
 }
 
 #middiv {
