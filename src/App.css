@@ -57,7 +57,8 @@ body {
 }
 
 #rootdiv1 {
-  height: 91.4vh;
+  margin-top: 4vh;
+  height: 92.4vh;
   display: flex;
   background-color: black;
 }
@@ -822,20 +823,18 @@ svg {
   }
 
   #buttonaddress {
-    margin-top: 0px !important;
+    margin-top: -20px !important;
     margin-left: 30px;
   }
 
   #textimg {
     height: 40px;
-    width: 60%;
+    width: 70%;
     word-wrap: break-word;
     margin-left: 40px;
   }
 
   #contact {
-    padding-top: 12px;
-    padding-bottom: 0px;
     margin-left: 15vw;
   }
 
@@ -843,10 +842,16 @@ svg {
     width: 16%;
   }
 
+  #belowtopleftcontactdiv {
+    height: 17vh;
+    margin-top: 4px;
+    width: 90%;
+  }
+
   #addressbtndiv {
     display: flex;
     position: relative;
-    top: 10px;
+    top: 15px;
   }
 
   /* #frontimgdiv {

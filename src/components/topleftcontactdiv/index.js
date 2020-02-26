@@ -11,26 +11,14 @@ import contactNumber from "../images/contactnumber.png";
 const update = () => {
   var divfb = document.getElementById("facebook").style;
   var divinsta = document.getElementById("instagram").style;
-  var instaimg = document.getElementById("instagramimg");
-  var facebookimg = document.getElementById("facebookimg");
-
-  console.log(Instanew.toString());
-  console.log(facebookimg.src);
 
   if (divfb.backgroundColor === "white") {
     divfb.cssText = "background-color:black";
-    facebookimg.cssText = "background-color:white";
-    instaimg.src = Instanew.toString();
-    facebookimg.src = FacebookNew.toString();
+    divfb.backgroundImage = `url(${FacebookNew})`;
+    divinsta.cssText = "background-color:white";
+    divinsta.backgroundImage = `url(${Instanew})`;
   } else {
     divfb.cssText = "background-color:white";
-    instaimg.src = instagram.toString();
-    facebookimg.src = facebook.toString();
-  }
-
-  if (divinsta.backgroundColor === "black") {
-    divinsta.cssText = "background-color:white";
-  } else {
     divinsta.cssText = "background-color:black";
   }
 };
