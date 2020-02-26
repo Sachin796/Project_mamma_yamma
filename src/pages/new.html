@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .wrapper {
+      background-color: brown;
+      border-radius: 50%;
+      width: 20px;
+      height: 30px;
+      position: relative;
+      top: 30%;
+      left: 30%;
+    }
+
+    .eye {
+      background-color: coral;
+      border-radius: 50%;
+      width: 10px;
+      height: 20px;
+    }
+
+    .face {
+      width: 200px;
+      height: 200px;
+      background-color: chartreuse;
+      /* position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); */
+      border-radius: 50%;
+    }
+  </style>
+
+  <body>
+    <div class="face">
+      <div class="wrapper">
+        <div class="eye"></div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var currentMousePos = {
+        x: 0,
+        y: 0
+      },
+      wHeight = $(window).height(),
+      wWidth = $(window).width();
+    $(document).mousemove(function(event) {
+      currentMousePos.x = event.pageX;
+      currentMousePos.y = event.pageY;
+      var trans1 = ((currentMousePos.x * 60) / wHeight) * 0.8 + "%", //Image
+        trans2 = ((currentMousePos.y * 60) / wHeight) * 0.8 + "%"; //Image
+      $(".eye").css({
+        "-webkit-transform": "translate(" + trans1 + ", " + trans2 + ")"
+      });
+    });
+  </script>
+</html>

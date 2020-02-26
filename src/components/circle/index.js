@@ -51,14 +51,15 @@ function Circle(props) {
   return (
     <>
       <div className={props.className}>
-        <img
+        {/* <img
           src={props.src}
           className="imgcircle"
           // onLoad={grayscaleimg(props.src)}
-        ></img>
-        <div id="lefteb" className="leftebclass"></div>
-        <div id="righteb" className="rightebclass"></div>
-        {/* <SvgComponent></SvgComponent> */}
+        ></img> */}
+        <div id="x">
+          <div id="lefteb" className="leftebclass"></div>
+          <div id="righteb" className="rightebclass"></div>
+        </div>
       </div>
     </>
   );

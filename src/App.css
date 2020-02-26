@@ -8,6 +8,11 @@
   src: url("./components/fonts/Font\ Mutabor.otf");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   margin: 0px;
@@ -94,7 +99,6 @@ body {
 /* Border image */
 
 #borderImg1 {
-  /* max-width: 100%; */
   min-height: 100%;
   height: 30px;
   margin-bottom: 0px !important;
@@ -170,10 +174,13 @@ body {
 .circletopleft {
   position: relative;
   height: 14vw;
+  background-image: url("./components//images//topleft_noeyes.png");
   border-radius: 50%;
+  background-size: contain;
   margin-top: 25px;
   margin-left: 5.8vw;
   width: 14vw;
+  overflow: hidden;
 }
 
 #backimage {
@@ -219,7 +226,6 @@ body {
   position: absolute;
   margin-top: 90vh;
   margin-bottom: 0px !important;
-  /* overflow: hidden; */
 }
 
 #toprightdiv {
@@ -255,26 +261,36 @@ body {
   border: 1px solid black;
   height: 30%;
 }
-#lefteb {
-  height: 10.5px;
-  width: 8px;
-  background-color: black;
-  /* background-image: url("./components/images/lefteyeball.png"); */
-  border-radius: 50%;
+
+/* #x {
+  border: 3px solid darkblue;
   position: relative;
-  top: -136px;
-  left: 80.5px;
+  top: 96px;
+  height: 17px;
+  overflow: hidden;
 }
 
-#righteb {
-  height: 10.5px;
+#lefteb {
+  height: 16.5px;
+  width: 8px;
+  background-color: black;
+  background-image: url(./components/images/ebleft.png);
+  position: relative;
+  /* top: -141.5px; */
+/* top: 24.5px; */
+/* border-radius: 50%; */
+/* left: 65px; */
+/* } */
+
+/* #righteb {
+  height: 16.5px;
   width: 8px;
   position: relative;
   background-color: black;
-  left: 7.5vw;
-  top: -20.4vh;
+  left: 97px;
+  top: -3vh;
   border-radius: 50%;
-}
+} */
 
 #belowtopleftcontactdiv {
   height: 17vh;
@@ -347,7 +363,6 @@ svg {
 }
 
 .imgcircle {
-  /* margin-top: 20px; */
   max-width: 100%;
   max-height: 100%;
 }
@@ -452,6 +467,36 @@ svg {
     display: flex;
   }
 
+  #x {
+    border: 3px solid darkblue;
+    position: relative;
+    top: 76.8px;
+
+    height: 20px;
+    overflow: hidden;
+  }
+
+  #lefteb {
+    height: 16.8px;
+    width: 8px;
+    background-color: black;
+    /* background-image: url(./components/images/lefteyeball.png); */
+    position: relative;
+    /* top: 79.9px; */
+    border-radius: 50%;
+    left: 73px;
+  }
+
+  #righteb {
+    height: 16.5px;
+    width: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    top: -16px;
+    left: 105px;
+  }
+
   #cardimg img {
     height: 100%;
     max-width: 100%;
@@ -534,22 +579,34 @@ svg {
     top: 10px;
   }
 
+  #x {
+    border: 3px solid darkblue;
+    position: relative;
+    top: 76.8px;
+
+    height: 20px;
+    overflow: hidden;
+  }
+
   #lefteb {
-    height: 10.5px;
+    height: 16.8px;
     width: 8px;
     background-color: black;
-    /* background-image: url("./components/images/lefteyeball.png"); */
+    /* background-image: url(./components/images/lefteyeball.png); */
     position: relative;
-    top: -121px;
+    /* top: 79.9px; */
     border-radius: 50%;
-    left: 80px;
+    left: 73px;
   }
 
   #righteb {
+    height: 16.5px;
+    width: 8px;
+    background-color: black;
     border-radius: 50%;
     position: relative;
-    top: -132px;
-    left: 111px;
+    top: -16px;
+    left: 105px;
   }
 }
 
@@ -636,18 +693,35 @@ svg {
     position: relative;
     top: 10px;
   }
-  #lefteb {
-    border-radius: 50%;
+
+  #x {
+    /* border: 3px solid darkblue; */
     position: relative;
-    top: -118px;
-    left: 82px;
+    top: 56.9px;
+    height: 16px;
+
+    overflow: hidden;
+  }
+
+  #lefteb {
+    height: 13.8px;
+    width: 6px;
+    background-color: black;
+    /* background-image: url(./components/images/lefteyeball.png); */
+    position: relative;
+    top: 3px;
+    border-radius: 50%;
+    left: 58.5px;
   }
 
   #righteb {
+    height: 14.5px;
+    width: 5.8px;
+    background-color: black;
     border-radius: 50%;
     position: relative;
-    top: -118px;
-    left: 82px;
+    top: -11px;
+    left: 83.5px;
   }
 }
 
@@ -1069,7 +1143,6 @@ svg {
   #topleftcontactdiv {
     height: auto;
     display: flex;
-    /* border: 1px solid black; */
     height: 50%;
   }
 
@@ -1213,7 +1286,6 @@ svg {
 
   /* ***** ContactNumber and addressdiv  *****  */
   #contact {
-    /* background-color: aquamarine; */
     max-width: 100%;
     min-width: 79%;
     margin-left: 8vw !important;
@@ -1342,7 +1414,6 @@ svg {
   /* ***** ContactNumber and addressdiv  *****  */
 
   #contactnumberdiv {
-    /* max-height: 100%; */
     display: inline-block;
     background-color: aliceblue;
     border: 1px solid black;
@@ -1352,7 +1423,6 @@ svg {
   }
 
   #contact {
-    /* background-color: aquamarine; */
     max-width: 100%;
     min-width: 80%;
     margin-left: 26px !important;
@@ -1372,7 +1442,6 @@ svg {
     margin-top: 20px;
     max-width: 100%;
     min-width: 100%;
-    /* width: 90%; */
   }
 
   #topleftcontactdiv {
@@ -1463,7 +1532,6 @@ svg {
   }
 
   #textimg {
-    /* margin-top: 20px; */
     max-width: 100%;
     min-width: 100%;
     width: 90%;
