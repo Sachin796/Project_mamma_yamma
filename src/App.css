@@ -177,7 +177,7 @@ body {
   background-image: url("./components//images//topleft_noeyes.png");
   border-radius: 50%;
   background-size: contain;
-  margin-top: 25px;
+  margin-top: 50px;
   margin-left: 5.8vw;
   width: 14vw;
   overflow: hidden;
@@ -197,7 +197,7 @@ body {
 .circletopright {
   position: relative;
   height: 14vw;
-  margin-top: 25px;
+  margin-top: 50px;
   right: -10px;
   margin-left: 7vw;
   background-color: aquamarine;
@@ -262,44 +262,15 @@ body {
   height: 30%;
 }
 
-/* #x {
-  border: 3px solid darkblue;
-  position: relative;
-  top: 96px;
-  height: 17px;
-  overflow: hidden;
-}
-
-#lefteb {
-  height: 16.5px;
-  width: 8px;
-  background-color: black;
-  background-image: url(./components/images/ebleft.png);
-  position: relative;
-  /* top: -141.5px; */
-/* top: 24.5px; */
-/* border-radius: 50%; */
-/* left: 65px; */
-/* } */
-
-/* #righteb {
-  height: 16.5px;
-  width: 8px;
-  position: relative;
-  background-color: black;
-  left: 97px;
-  top: -3vh;
-  border-radius: 50%;
-} */
-
 #belowtopleftcontactdiv {
   height: 17vh;
+  margin-top: 20px;
   width: 90%;
 }
 
 #social_icons {
   border-left: 1px solid black;
-  width: 10%;
+  width: 11%;
   height: 99.9%;
   float: right;
 }
@@ -356,6 +327,9 @@ body {
   width: 96vw;
   margin-left: 2vw;
   height: 32vh;
+  top: 0%;
+  left: 0%;
+  /* position: fixed; */
 }
 
 svg {
@@ -385,6 +359,15 @@ svg {
   display: flex;
   flex-direction: column;
   transition: all 0.5s ease;
+}
+
+@keyframes scroll {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: -1000%;
+  }
 }
 
 #Cards:hover #section1 {
@@ -458,7 +441,7 @@ svg {
 
 /* **************************************************** */
 
-@media screen and (max-width: 1920px) and (min-width: 1441px) {
+@media screen and (max-width: 1920px) and (min-width: 1440px) {
   #maindiv {
     height: auto;
   }
@@ -468,7 +451,6 @@ svg {
   }
 
   #x {
-    border: 3px solid darkblue;
     position: relative;
     top: 76.8px;
 
@@ -509,8 +491,13 @@ svg {
   }
   #textimg {
     height: 40px;
-    margin-left: 50px;
+    margin-left: 30px;
     width: 80%;
+  }
+  #addressbtndiv {
+    display: flex;
+    position: relative;
+    top: 15px;
   }
 }
 
@@ -519,11 +506,12 @@ svg {
 @media screen and (max-width: 1441px) and (min-width: 1200px) {
   .circletopleft {
     border: none;
-    width: 200px;
-    margin-top: 19px;
+    width: 14vw;
+    /* margin-top: 19px; */
+    margin-top: 65px;
     margin-left: 6vw;
     margin-right: 0px;
-    height: 200px;
+    height: 14vw;
   }
 
   #contactnumberdiv {
@@ -540,9 +528,9 @@ svg {
     border: none;
     max-width: 100%;
     margin-bottom: 35px;
-    width: 15vw;
+    width: 14vw;
     margin-left: 6vw;
-    height: 15vw;
+    height: 14vw;
   }
 
   .circletopright img {
@@ -580,9 +568,8 @@ svg {
   }
 
   #x {
-    border: 3px solid darkblue;
     position: relative;
-    top: 76.8px;
+    top: 70.8px;
 
     height: 20px;
     overflow: hidden;
@@ -594,9 +581,9 @@ svg {
     background-color: black;
     /* background-image: url(./components/images/lefteyeball.png); */
     position: relative;
-    /* top: 79.9px; */
+    top: 2px;
     border-radius: 50%;
-    left: 73px;
+    left: 70px;
   }
 
   #righteb {
@@ -605,8 +592,8 @@ svg {
     background-color: black;
     border-radius: 50%;
     position: relative;
-    top: -16px;
-    left: 105px;
+    top: -14px;
+    left: 101.5px;
   }
 }
 
@@ -748,13 +735,6 @@ svg {
     width: 100%;
   }
 
-  /* #leftrightimg {
-    max-width: 100%;
-    min-height: 100%;
-    height: inherit;
-    width: 11.02vw;
-  } */
-
   .circletopright {
     border: none;
     max-width: 100%;
@@ -794,7 +774,7 @@ svg {
   }
 
   #Cards {
-    height: 51vh;
+    height: 32vh;
   }
 
   #buttonaddress {
@@ -804,9 +784,9 @@ svg {
 
   #textimg {
     height: 40px;
-
+    width: 60%;
+    word-wrap: break-word;
     margin-left: 40px;
-    width: 80%;
   }
 
   #contact {
@@ -968,9 +948,15 @@ svg {
     overflow-y: scroll;
   }
 
+  #x {
+    height: 10px;
+    margin-top: 41px;
+  }
+
   #buttonaddress {
-    margin-top: 0px !important;
+    margin-top: -22px !important;
     margin-left: 110px;
+    margin-bottom: 10px;
   }
 
   #topleftcontactdiv {
@@ -980,15 +966,24 @@ svg {
     height: 42%;
   }
 
-  /* #leftrightimg {
-    max-width: 100%;
-    min-height: 100%;
-    height: inherit;
-    width: 18.02vw;
-  } */
+  #topleftcontactdiv h2 {
+    margin-left: -20px;
+    top: -20px;
+  }
+
+  #textdiv {
+    top: -8px;
+  }
+
+  #textimg {
+    overflow: hidden;
+    height: 40px;
+    margin-left: 7vw;
+    width: 70%;
+  }
 
   #social_icons {
-    width: 19.5%;
+    width: 10%;
   }
 
   #topleftimg {
@@ -1006,14 +1001,12 @@ svg {
     max-height: 100%;
   }
 
+  #facebook {
+    background-size: 50%;
+  }
+
   #contact {
     padding-left: 50px;
-  }
-  #textimg {
-    height: 40px;
-    margin-left: 40px;
-    width: 81%;
-    margin-bottom: 20px;
   }
 
   #addressbtndiv {
@@ -1025,8 +1018,8 @@ svg {
   .circletopleft {
     border: none;
     width: 16vw;
-    margin-top: 50px;
-    margin-left: 4vw;
+    margin-top: 40px;
+    margin-left: 7vw;
     margin-right: 0px;
     height: 16vw;
   }
@@ -1040,7 +1033,7 @@ svg {
   .circletopright {
     border: none;
     max-width: 100%;
-    margin-top: 50px;
+    margin-top: 40px;
     width: 16vw;
     margin-left: 3vw;
     height: 16vw;
@@ -1076,18 +1069,21 @@ svg {
   }
 
   #lefteb {
-    left: 43.5px !important;
-    top: -13.7vh !important;
-    height: 7.5px;
+    margin-left: 43.5px;
+    margin-top: 7.8vh !important;
+    height: 10.5px;
+    background-color: black;
     width: 5px;
     border-radius: 50%;
   }
 
   #righteb {
-    height: 7.5px;
-    width: 6px;
-    left: 61.8px !important;
-    top: -15.1vh !important;
+    height: 9.5px;
+    width: 4.7px;
+    position: relative;
+    background-color: black;
+    left: 62.2px !important;
+    top: -1.75vh !important;
     border-radius: 50%;
   }
 }
