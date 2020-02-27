@@ -1499,6 +1499,10 @@ svg {
     overflow-y: scroll;
   }
 
+  #maindiv {
+    background-color: #ededed;
+  }
+
   #topflex {
     display: block;
     height: auto;
@@ -1530,12 +1534,24 @@ svg {
   #leftrightimg {
     max-width: 100%;
     height: 100vh;
-    z-index: -1;
-    width: 64.02vw;
+    z-index: 1;
+    width: 8vw;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+  }
+
+  #leftrightimg1 {
+    position: fixed;
+    right: 0;
+    top: 4%;
+    height: 92vh;
+    z-index: 1;
+    width: 8vw;
+    background-image: url(/static/media/leftmargin.a725d47d.png);
+    background-size: cover;
+    /* background-repeat: repeat; */
   }
 
   /* ***** ContactNumber and addressdiv  *****  */
@@ -1544,9 +1560,15 @@ svg {
     display: inline-block;
     background-color: aliceblue;
     border: 1px solid black;
-    padding-top: 10px;
+    padding-top: 17px;
+    margin-left: 4vw;
     padding-bottom: 15px;
     width: 100%;
+  }
+
+  #topbottom,
+  #topbottom1 {
+    background-size: 40% 30px;
   }
 
   #contact {
@@ -1566,8 +1588,13 @@ svg {
   }
 
   #textimg {
-    margin-top: 81px;
-    margin-left: 30px;
+    margin-top: 69px;
+    overflow: hidden;
+    word-break: break-word;
+    width: 67%;
+    height: 12vh;
+    margin-left: 19vw;
+    font-size: xx-small;
   }
 
   #topleftcontactdiv {
@@ -1602,6 +1629,15 @@ svg {
     margin-left: 16vw;
     width: 65vw;
     height: 56vw;
+  }
+
+  #topleftcontactdiv h2 {
+    word-wrap: break-word;
+    position: relative;
+    font-size: large;
+    margin-left: 50px;
+    top: -12px;
+    margin-bottom: 0px;
   }
 
   #topleftimg {
@@ -1648,49 +1684,4 @@ svg {
   #social_icons {
     display: none;
   }
-
-  /* #frontimgdiv {
-    height: 22vh;
-  }
-
-  #frontcardimg {
-    height: 100%;
-  } */
-}
-
-@media screen and (max-width: 320px) and (min-width: 250px) {
-  #buttonaddress {
-    margin-top: 15px !important;
-    margin-left: 65px;
-  }
-
-  #textimg {
-    max-width: 100%;
-    min-width: 100%;
-    width: 90%;
-  }
-
-  #lefteb {
-    left: 72.5px !important;
-    top: -22.8vh !important;
-    height: 13px;
-    width: 10.5px;
-    border-radius: 50%;
-  }
-
-  #righteb {
-    height: 12.5px;
-    width: 10px;
-    left: 104.7px !important;
-    top: -25vh !important;
-    border-radius: 50%;
-  }
-
-  /* #frontimgdiv {
-    height: 22vh;
-  }
-
-  #frontcardimg {
-    height: 100%;
-  } */
 }

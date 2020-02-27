@@ -11,9 +11,9 @@ function Mainpage() {
     <>
       {/* <canvas id="canvas"> */}
       <div id="rootdiv">
-        {/* <span className="lrroot">
+        <div className="lrroot">
           <LeftRightBorder src={LeftBorder}></LeftRightBorder>
-        </span> */}
+        </div>
         <div id="maindiv">
           <Topdiv></Topdiv>
           <Bottomdiv></Bottomdiv>
