@@ -21,10 +21,6 @@ function Card(props) {
                 </div>
               </div>
             </div>
-            {/* <div id="cardTextContent">
-              "Cupcake ipsum dolor sit. Amet I love liquorice jujubes pudding
-              croissant
-            </div> */}
           </div>
           <div id="backpart">
             <div id="backimgdiv">

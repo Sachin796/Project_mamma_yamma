@@ -1,22 +1,16 @@
-var eyeballs = document.getElementsByClassName("leftebclass");
-var eyeballsr = document.getElementsByClassName("rightebclass");
-
 var currentMousePos = {
-  x: 0,
-  y: 0
-};
-let wHeight = window.innerHeight;
-let wWidth = window.innerWidth;
-
-document.onmousemove = function(event) {
+    x: 0,
+    y: 0
+  },
+  wHeight = window.innerHeight,
+  wWidth = window.innerWidth;
+document.body.onmousemove = function(event) {
+  console.log(event);
   currentMousePos.x = event.pageX;
   currentMousePos.y = event.pageY;
+  var trans1 = ((currentMousePos.x * 60) / wHeight) * 0.8 + "%", //Image
+    trans2 = ((currentMousePos.y * 60) / wHeight) * 0.8 + "%"; //Image
 
-  var trans1 = ((currentMousePos.x * 60) / wHeight) * 0.8 + "%";
-  var trans2 = ((currentMousePos.y * 60) / wHeight) * 0.8 + "%";
-
-  eyeballs[0].style.cssText =
-    "-webkit-transform: translate(" + trans1 + ", " + trans2 + ")";
-  eyeballsr[0].style.cssText =
-    "-webkit-transform: translate(" + trans1 + ", " + trans2 + ")";
+  document.getElementsByClassName("eye")[0].style.transform =
+    "translate(" + trans1 + ", " + trans2 + ")";
 };

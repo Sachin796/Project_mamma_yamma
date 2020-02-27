@@ -8,7 +8,11 @@ function topimage() {
   return (
     <>
       <div id="topleftimg">
-        <Circle className="circletopleft" src={logo1}></Circle>
+        <Circle
+          className="circletopleft"
+          id="circletopleft"
+          src={logo1}
+        ></Circle>
         <CircleRight className="circletopright" src={logo}></CircleRight>
       </div>
     </>
