@@ -9,3 +9,10 @@
 //     document.getElementById("facebook").style.background = "#000";
 //   }
 // }
+
+window.onload = () => {
+  var canvas = document.getElementById("canvas");
+  var c = canvas.getContext("2d");
+  c.fillStyle = "grey";
+  c.fillRect(0, 0, canvas.width, canvas.height);
+};

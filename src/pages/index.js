@@ -9,10 +9,11 @@ import RightBorder from "../components/images/border/border2_right.png";
 function Mainpage() {
   return (
     <>
+      {/* <canvas id="canvas"> */}
       <div id="rootdiv">
-        <span className="lrroot">
+        {/* <span className="lrroot">
           <LeftRightBorder src={LeftBorder}></LeftRightBorder>
-        </span>
+        </span> */}
         <div id="maindiv">
           <Topdiv></Topdiv>
           <Bottomdiv></Bottomdiv>
@@ -21,6 +22,7 @@ function Mainpage() {
           <RBorder src={RightBorder}></RBorder>
         </div>
       </div>
+      {/* </canvas> */}
     </>
   );
 }
