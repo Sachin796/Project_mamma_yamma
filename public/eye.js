@@ -8,9 +8,11 @@ document.body.onmousemove = function(event) {
   console.log(event);
   currentMousePos.x = event.pageX;
   currentMousePos.y = event.pageY;
-  var trans1 = ((currentMousePos.x * 60) / wHeight) * 0.8 + "%", //Image
-    trans2 = ((currentMousePos.y * 60) / wHeight) * 0.8 + "%"; //Image
+  var trans1 = ((currentMousePos.x * 60) / wHeight) * 0.6 + "%", //Image
+    trans2 = ((currentMousePos.y * 60) / wHeight) * 0.4 + "%"; //Image
 
-  document.getElementsByClassName("eye")[0].style.transform =
+  document.getElementsByClassName("eyeleft")[0].style.transform =
+    "translate(" + trans1 + ", " + trans2 + ")";
+  document.getElementsByClassName("eyeright")[0].style.transform =
     "translate(" + trans1 + ", " + trans2 + ")";
 };

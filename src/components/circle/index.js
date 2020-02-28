@@ -8,7 +8,10 @@ function Circle(props) {
     <>
       <div class="face">
         <div class="wrapper">
-          <div class="eye" id="eye"></div>
+          <div class="eyeleft" id="eye"></div>
+        </div>
+        <div className="wrapper1">
+          <div class="eyeright" id="eye"></div>
         </div>
       </div>
     </>
