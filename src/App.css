@@ -1,1748 +1,1252 @@
 @font-face {
-  font-family: Pilowlava-Regular;
-  src: url("./components/fonts/Pilowlava-Regular.otf");
+    font-family: Pilowlava-Regular;
+    src: url("./components/fonts/Pilowlava-Regular.otf");
 }
 
 @font-face {
-  font-family: Font Mutabor;
-  src: url("./components/fonts/Font\ Mutabor.otf");
+    font-family: Font Mutabor;
+    src: url("./components/fonts/Font\ Mutabor.otf");
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: visible !important; */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+
+*{
+   -ms-overflow-style: none;
 }
 
 html,
 body {
-  margin: 0px;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scrollbar-width: none;  
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
 }
 
 #rootdiv1 {
-  overflow-y: scroll;
+    /* overflow-y: scroll; */
+    /* margin-top: 4vh; */
+    /* height: 2000%; */
+    /* display: flex; */
+    display: inline-block;
+    background-color: black;
+    /* overflow: visible; */
 }
 
 #fronttext {
-  background-color: #ffbe00;
+    background-color: #ffbe00;
 }
 
 #rootdiv {
-  display: flex;
+    /* display: flex; */
+    overflow: hidden;
 }
 
+/* .lrroot
+{
+    overflow: visible !important;
+} */
+
 #backimgsection {
-  margin-top: 50px;
-  height: 30%;
+    margin-top: calc(30px + 2vh + 60px);
+    margin-bottom: 50px;
+    height: 20%;
+    text-align: center;
 }
 
 #backimg {
-  max-height: 100%;
-  background-size: cover;
-  margin-left: 40.5vw;
+    max-height: 100%;
+    /* background-size: cover;
+    margin-left: 40.5vw; */
 }
 
 #backtextsection {
-  height: 50%;
+    height: 50%;
 }
 
 #backtext {
-  overflow: hidden;
-  margin-top: 30px;
-  height: 50vh;
+    margin-bottom: calc(30px + 2vw) !important;
+    /* overflow: hidden; */
+    margin-top: 30px;
+    /* height: 50vh; */
+    color: #FFF;
+    font-family: Font Mutabor;
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: calc(1vw + 0.8vh + 0.6vmin);
 }
 
 #text1 {
-  height: 10vh;
-  text-align: center;
-  overflow: hidden;
-  width: 70%;
-  margin: auto;
+    height: 10vh;
+    text-align: center;
+    /* overflow: hidden; */
+    width: 70%;
+    margin: auto;
 }
 
 #text2 {
-  height: 25vh;
-  text-align: center;
-  overflow: hidden;
-  width: 70%;
-  margin: auto;
+    height: 25vh;
+    text-align: center;
+    /* overflow: hidden; */
+    width: 70%;
+    margin: auto;
 }
 
 #text3 {
-  height: 17vh;
-  text-align: center;
-  overflow: hidden;
-  width: 70%;
-  margin: auto;
+    height: 17vh;
+    text-align: center;
+    /* overflow: hidden; */
+    width: 70%;
+    margin: auto;
 }
 
 #text1,
 #text2,
-#text3 > h5 {
-  color: aquamarine;
-  font-size: 30px;
+#text3>h5 {
+    color: aquamarine;
+    font-size: 30px;
 }
 
 #middiv {
-  width: 100%;
-}
-
-#rootdiv1 {
-  margin-top: 4vh;
-  height: 92.4vh;
-  display: flex;
-  background-color: black;
+    width: 100%;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 #topbottom {
-  z-index: 1;
-  width: 100vw;
-  height: 4vh;
-  background-image: url("./components/images/border/border1.png");
-  background-size: 20% 30px;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  animation: scroll 100s linear infinite;
+    z-index: 100;
+    width: 98vw;
+    height: 30px;
+    background-image: url("./components/images/border/combined-border.png");
+    background-color: #FFF;
+    background-size: 30% 30px;
+    position: fixed;
+    top: 2%;
+    left: 1%;
+    animation: scroll 100s linear infinite;
 }
 
 #topbottom1 {
-  z-index: 1;
-  width: 100vw;
-  height: 4vh;
-  background-image: url("./components/images/border/border1.png");
-  background-size: 20% 30px;
-  position: fixed;
-  bottom: 0%;
-  left: 0%;
-  animation: scroll 100s linear infinite;
+    z-index: 100;
+    width: 98vw;
+    height: 30px;
+    background-image: url("./components/images/border/combined-border.png");
+    background-size: 30% 30px;
+    background-color: #FFF;
+    position: fixed;
+    bottom: 2%;
+    left: 1%;
+    animation: scroll2 100s linear infinite;
 }
+
+.text-wrapper
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -100%;
+}
+
+#menu-svg
+{
+    width: 100%;
+    height: 100%;
+}
+
+#svg-text
+{
+    font-family: Font Mutabor;
+    font-size: 10px;
+}
+
 @keyframes scroll {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: -1000%;
-  }
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: -1000%;
+    }
 }
+
+@keyframes scroll2 {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 1000%;
+    }
+}
+
 
 /* Border image */
 
 #borderImg1 {
-  min-height: 100%;
-  height: 30px;
-  margin-bottom: 0px !important;
-  width: 100%;
-  float: left;
+    min-height: 100%;
+    height: 30px;
+    margin-bottom: 0px !important;
+    width: 100%;
+    float: left;
 }
 
 #top_bottom_border {
-  margin-top: 0px;
-  display: flex;
+    margin-top: 0px;
+    display: flex;
 }
 
 #leftrightimg {
-  position: fixed;
-  left: 0;
-  top: 4%;
-  height: 92vh;
-  z-index: 1;
-  width: 30px;
-  background-image: url("components/images/leftmargin.png");
-  background-size: cover;
+    position: fixed;
+    left: 1%;
+    top: 2%;
+    height: 96vh;
+    z-index: 101;
+    width: 30px;
+    background-image: url("components/images/leftmargin.png");
+    background-size: cover;
 }
 
 #leftrightimg1 {
-  position: fixed;
-  right: 0;
-  top: 4%;
-  height: 92vh;
-  z-index: 1;
-  width: 30px;
-  background-image: url("components/images/leftmargin.png");
-  background-size: cover;
-  /* background-repeat: repeat; */
+    position: fixed;
+    right: 1%;
+    top: 2%;
+    height: 96vh;
+    z-index: 101;
+    width: 30px;
+    background-image: url("components/images/leftmargin.png");
+    background-size: cover;
+    /* background-repeat: repeat; */
 }
+
 
 /* ******************* */
 
 #maindiv {
-  background-color: #304fad;
-  height: auto;
+    background-color: #284DA9;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
-#contactnumberdiv {
-  display: flex;
+.box {
+    display: inline-block;
+    background-color: #ffbe00;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    /* filter: contrast(0.5) grayscale(100%); */
+    overflow: hidden;
+}
+
+body
+{
+    width: 100vw;
+        height: 100vh;
+}
+
+canvas {
+    /* background: transparent; */
+    overflow: hidden;
+    /* width: 100%; */
+    position: absolute;
+    top: 20%;
+    /* opacity: 0.9; */
+    /* filter: contrast(0.5) grayscale(100%); */
+}
+
+
+#btndiv
+{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    /* height: 2.79vw; */
+    border-radius: 10px;
+    /* background-image: url("components/images/button.png"); */
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0px 5px 0px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
+
+#btndiv p
+{
+    font-family: Font Mutabor;
+    font-size: 15px;
+    color: #FFF;
+    text-align: center;
+}
+
+#btndiv:hover
+{
+    transform: translateY(-9px);
+    box-shadow: 0px 4px 0px rgba(0,0,0,0.3);
+}
+
+#btndiv:active
+{
+    transform: translateY(-5px);
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.3);
 }
 
 #textdiv {
-  font-family: Font Mutabor;
-  position: relative;
-  top: -20px;
-  font-weight: 700;
-  font-size: calc(0.3vw + 0.5vh + 0.5vmin);
+    font-family: Font Mutabor;
+    display: inline-block;
+    width: calc(70% - 30px);
+    /* font-weight: 700; */
+    font-size: calc(0.3vw + 0.2vh + 0.4vmin);
+    margin-left: 20px;
+    color: #FFF;
+}
+
+#contact
+{
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+#contact2
+{
+    font-family: Pilowlava-Regular;
+    color: #FFF;
+    position: relative;
+    top: 25%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+#textimg2
+{
+    color: #FFF;
+    font-family: Font Mutabor;
+    font-size: 10px;
+    position: relative;
+    top: 35%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.madeby
+{
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-family: Font Mutabor;
+    font-size: 10px;
+    border-radius: 10px;
+    border: 1px white solid;
+    padding: 10px 20px;
+}
+
+.contact-wrapper
+{
+    position: relative;
+    left: 57%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-wrapper2
+{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
+}
+
+a{
+    color: white;
+}
+
+.info-contact
+{
+    width: calc(95vw - 60px - 2vw);
+    height: 130px;
+    margin-left: calc(30px + 1vw);
+    position: relative;
+    top: calc(-30px - 1vw);
+    border: 1px white solid;
+    display: inline-block;
+}
+
+#social_icons2
+{
+    border: 1px solid white;
+    width: 5vw;
+    height: 130px;
+    display: inline-block;
+    position: relative;
+    top: 13.5px;
 }
 
 #textdiv1 {
-  display: none;
+    display: none;
 }
 
 .sidetextdiv {
-  display: none;
+    display: none;
 }
 
 .circle {
-  margin-top: 10px;
-  height: auto;
-  width: 100%;
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
 }
 
 #backpart {
-  background-color: #ffbe00;
-  height: 100%;
+    background-color: #ffbe00;
+    height: 100%;
 }
-/* .circletopleft {
-  position: relative;
-  height: 14vw;
-  background-image: url("./components//images//topleft_noeyes.png");
-  border-radius: 50%;
-  background-size: contain;
-  margin-top: 50px;
-  margin-left: 5.8vw;
-  width: 14vw;
-  overflow: hidden;
-} */
+
+.circletopleft {
+    position: relative;
+    height: 14vw;
+    background-image: url("./components//images//topleft_noeyes.png");
+    border-radius: 50%;
+    background-size: contain;
+    margin-top: 50px;
+    margin-left: 5.8vw;
+    width: 14vw;
+    /* overflow: hidden; */
+}
 
 #backimage {
-  margin-left: 42%;
-  margin-top: 10%;
+    margin-left: 42%;
+    margin-top: 10%;
 }
 
 #backimage1 {
-  width: 80%;
-  margin-left: 21px;
-  margin-top: 13%;
+    width: 80%;
+    margin-left: 21px;
+    margin-top: 13%;
 }
 
 .circletopright {
-  position: relative;
-  height: 13vw;
-  margin-top: 50px;
-  right: 40px;
-  margin-left: 10vw;
-  background-color: aquamarine;
-  border-radius: 50%;
-  width: 13vw;
+    position: relative;
+    height: 14vw;
+    margin-top: 50px;
+    right: -10px;
+    margin-left: 7vw;
+    /* background-color: aquamarine; */
+    border-radius: 50%;
+    width: 14vw;
 }
 
 .circleBottom {
-  width: 100%;
+    width: 100%;
 }
 
 #topflex {
-  display: flex;
-  margin-top: 4vh;
-  margin-left: 2vw;
-  height: 60vh;
-  width: 96vw;
+    display: flex;
+    margin-top: calc(2vh + 30px);
+    margin-left: calc(1vw + 30px);
+    margin-right: calc(1vw + 30px);
+    height: 55vh;
+    /* width: calc94vw; */
 }
 
+
+
 #topborderdiv {
-  margin-bottom: 0px !important;
-  overflow: hidden;
+    margin-bottom: 0px !important;
+    /* overflow: hidden; */
 }
 
 #topborderdiv1 {
-  position: absolute;
-  margin-top: 90vh;
-  margin-bottom: 0px !important;
+    position: absolute;
+    margin-top: 90vh;
+    margin-bottom: 0px !important;
 }
 
 #toprightdiv {
-  width: 49.7%;
+    width: 50%;
+    border: 1px #111 solid;
 }
 
+#hero-img
+{
+    background-color: #FFF;
+    background-image: url("components/images/topright.png");
+    background-size: 40vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px #111 solid;
+    width: 100%;
+    height: 100%;
+}
+
+
 /* Rotate top right image */
+
 .rotate {
-  animation: rotation 8s infinite linear;
+    animation: rotation 8s infinite linear;
 }
 
 @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 #topleftdiv {
-  width: 50%;
-  border: 1px solid black;
-  flex-flow: wrap;
+    width: 50%;
+    
+    flex-flow: wrap;
 }
+
 #topleftimg {
-  display: flex;
-  height: 70%;
+    display: flex;
+    border: 1px solid #111;
+    height: 70%;
 }
+
 #topleftcontactdiv {
-  display: flex;
-  width: 99.9%;
-  border: 1px solid black;
-  height: 30%;
+    display: flex;
+    width: 99.9%;
+    border: 1px solid #111;
+    height: 30%;
 }
 
 #belowtopleftcontactdiv {
-  height: 17vh;
-  margin-top: 20px;
-  width: 90%;
+    height: 100%;
+    /* margin-top: 20px; */
+    width: 90%;
 }
 
 #social_icons {
-  border-left: 1px solid black;
-  width: 11%;
-  height: 99.9%;
-  float: right;
+    border-left: 1px solid #111;
+    width: 10%;
+    /* height: 99.9%; */
+    /* float: right; */
 }
 
-#socialicons {
-  max-width: 100%;
-  min-height: 100%;
-}
 
 #instagram {
-  background-image: url("./components/images/inst_white.png");
-  background-size: 35%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50%;
+    background-image: url("./components/images/inst_yellow-inverted.png");
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 50%;
+}
+
+#instagram:active{
+    background-image: url("./components/images/inst_yellow.png");
+}
+
+.instg:active
+{
+    background-color: #ffbe00 !important;
 }
 
 #facebook {
-  background-image: url("./components/images/Facebook.png");
-  background-size: 35%;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  height: 50%;
+    background-image: url("./components/images/Facebook-yellow.png");
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffbe00;
+    height: 50%;
 }
 
-#facebookimg,
-#instagramimg {
-  height: 1.2vw;
-  width: 1vw;
-  margin-top: 2.9vh;
-  margin-left: 2vh;
-  min-width: 40%;
-  max-height: 100%;
+#facebook:active{
+    background-image: url("./components/images/Facebook-yellow-inverted.png");
+}
+
+.faceb:active
+{
+    background-color: #000 !important;
+}
+
+.info-fb
+{
+    background-color: white !important;
+    background-image: url("./components/images/Facebook.png") !important;
+}
+
+.info-in
+{
+    background-color: black !important;
+    background-image: url("./components/images/inst_white.png") !important;
+}
+
+.info-fb:active
+{
+    filter: invert(1);
+}
+
+.info-in:active
+{
+    filter: invert(1);
 }
 
 #backbottomimg {
-  margin-top: 2.27vh;
-  margin-left: 4vw;
-}
-
-#topleftcontactdiv h2 {
-  word-wrap: break-word;
-  position: relative;
-  margin-left: 50px;
-  top: -12px;
-  margin-bottom: 0px;
+    margin-top: 2.27vh;
+    margin-left: 4vw;
 }
 
 #cardDiv {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  width: 96vw;
-  margin-left: 2vw;
-  height: 32vh;
-  top: 0%;
-  left: 0%;
-  /* position: fixed; */
+    display: flex;
+    /* flex-direction: row;
+    flex-flow: wrap;
+    flex: 0 1 100%; */
+    width: 94vw;
+    margin-left: calc(1vw + 30px);
+    height: calc(100vh - 60px - 4vh - 55vh);
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    /* position: fixed; */
 }
 
 svg {
-  float: left;
+    float: left;
 }
 
 .imgcircle {
-  max-width: 100%;
-  max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-#buttonaddress {
-  margin-top: 0px !important;
-  margin-left: 60px;
-}
 
 #contact {
-  margin-bottom: 0px !important;
-  padding-top: 12px;
-  margin-left: 40px;
-  font-family: Pilowlava-Regular;
+    font-family: Pilowlava-Regular;
+}
+
+.image-card-wrapper
+{
+    height: 80%;
+    width: auto;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 25vh;
+    height: 100%;
+    perspective: 1000px;
+  }
+
+  .product-image
+  {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px #111 solid;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 105%;
+  }
+
+  .flip-card-back .product-image
+  {
+      width: 100%;
+      height: 50%;
+      border-radius: 50%;
+      border: 0px red solid;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 25%;
+  }
+
+  .flip-card-back .image-card-wrapper p{
+      transform: translateY(-20px);
+      font-size: 7px;
+      border: 0;
+      background-color: transparent;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #304FAD;
+    color: black;
+  }
+
+  .flip-card-front img
+  {
+    width: 100%;
+  }
+
+  .flip-card-front p
+  {
+    width: 100%;
+    height: 20%;
+    font-family: Font Mutabor;
+    font-size: calc(0.3vw + 0.2vh + 0.2vmin);
+    /* line-height: 130%; */
+    padding-top: 4%;
+    /* font-size: 6px; */
+    text-align: center;
+    /* height: 21%; */
+    /* transform: translateY(-4px); */
+    background-color: #ffbe00;
+    border: 1px #111 solid;
+  }
+  
+  .flip-card-back p
+  {
+    width: 100%;
+    height: 20%;
+    font-family: Font Mutabor;
+    font-size: calc(0.6vw + 0.5vh + 0.5vmin);
+    line-height: 130%;
+    padding-top: 7%;
+    /* font-size: 6px; */
+    text-align: center;
+    color: #000;
+    /* height: 21%; */
+    /* transform: translateY(-4px); */
+    background-color: #ffbe00;
+    border: 1px #111 solid;
+  }
+
+  .flip-card-back {
+    background-color: #ffbe00;
+    /* color: white; */
+    transform: rotateY(180deg);
 }
 
 #Cards {
-  height: 100%;
-  width: 16.657%;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.5s ease;
+    height: 100%;
+    width: 25vh; 
+    /* background-color: blanchedalmond; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    transition: all 0.5s ease;
+    overflow: hidden; 
+    border: 1px solid #111;  
+}
+
+
+#frontimgdiv
+{
+    height: 70%;
+}
+
+#fronttext
+{
+    transform: translateY("50px");
+    height: 10vh;
+    font-family: Font Mutabor;
+    font-size: calc(0.3vw + 0.3vh + 0.4vmin);
+    text-align: center;
+}
+
+#imgandtext
+{
+    height: 100%;
 }
 
 @keyframes scroll {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: -1000%;
-  }
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: -1000%;
+    }
 }
 
 #Cards:hover #section1 {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 #frontpart {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+    position: absolute;
+    /* width: 100%;
+    height: 10%; */
+    backface-visibility: hidden;
 }
 
 #bd {
-  border-top: 2px solid black;
-  margin-top: 4.8%;
+    border-top: 1px solid #111;
+    margin-top: 0.7vh;
 }
 
 #backbottoming {
-  margin-top: 1.5vh;
-  margin: 10px;
+    margin-top: 1.5vh;
+    margin: 10px;
 }
 
 #backpart {
-  border: 1px solid black;
-  position: relative;
-  width: 100%;
-  height: 99.9%;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
+    border: 1px solid #111;
+    position: relative;
+    width: 100%;
+    height: 99.9%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
+
 #cardimg {
-  height: 100%;
+    height: 100%;
 }
 
 #Cards #section1 {
-  height: 100%;
-  width: 100%;
-  transform-style: preserve-3d;
-  transition: all 0.5s ease;
+    /* height: 100%; */
+    /* width: 100%; */
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
 }
 
-#addressbtndiv {
-  display: flex;
-  position: relative;
-  top: 10px;
+.rot
+{
+    width: 150px;
 }
 
-#btndiv {
-  width: 50%;
-  float: left;
+.circles
+{
+    width: 70%;
+    display: flex;
+    height: 150px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rot-wrap
+{
+    width: 100%;
+    height: 100%;
+}
+
+.rot-wrap2
+{
+    margin-top: calc(30px + 2vh);
+    width: 100%;
+    height: 40vh;
+}
+
+.rot2
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+}
+
+.rotInfo
+{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .face {
-  width: 200px;
-  height: 200px;
-  background-size: contain;
-  background-image: url("./components/images/topleft_noeyes.png");
-  margin-left: 5.8vw;
-  margin-top: 6vh;
-  border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    /* background-color: chartreuse; */
+    background-size: contain;
+    background-image: url("./components/images/topleft_noeyes.png");
+    /* position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 50%;
+}
+
+.face-b {
+    width: 150px;
+    height: 150px;
+    /* background-color: chartreuse; */
+    background-size: contain;
+    background-image: url("./components/images/topleft.png");
+    /* position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 50%;
+}
+
+.face2 {
+    width: 150px;
+    height: 150px;
+    /* background-color: chartreuse; */
+    background-size: contain;
+    background-image: url("./components/images/topleft_rightimgred.png");
+    /* position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 50%;
+}
+
+.face6 {
+    width: 150px;
+    height: 150px;
+    /* background-color: chartreuse; */
+    background-size: contain;
+    background-image: url("./components/images/infopageimg1.png");
+    /* position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 50%;
 }
 
 .wrapper {
-  background-color: transparent;
-  border-radius: 50%;
-  width: 13px;
-  height: 19px;
-  position: relative;
-  top: 36%;
-  overflow: hidden;
-  left: 34%;
-}
-
-.wrapper1 {
-  background-color: transparent;
-  border-radius: 50%;
-  width: 14px;
-  height: 19px;
-  position: relative;
-  top: 27%;
-  overflow: hidden;
-  left: 49%;
-}
-
-.eyeleft {
-  border-radius: 50%;
-  background-image: url("./components//images//ebleft.png");
-  background-size: contain;
-  width: 8px;
-  height: 18px;
-}
-
-.eyeright {
-  border-radius: 50%;
-  background-image: url("./components//images//ebright.png");
-  background-size: contain;
-  width: 8px;
-  height: 18px;
-}
-
-/* **************************************************** */
-
-@media screen and (max-width: 2570px) and (min-width: 1921px) {
-  #maindiv {
-    height: auto;
-  }
-
-  #cardimg img {
-    height: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
-  }
-  #buttonaddress {
-    margin-top: 0px !important;
-    margin-left: 30px;
-  }
-}
-
-/* **************************************************** */
-
-@media screen and (max-width: 1920px) and (min-width: 1440px) {
-  #maindiv {
-    height: auto;
-  }
-
-  #contactnumberdiv {
-    display: flex;
-  }
-
-  #frontimgdiv {
-    height: 24vh;
-  }
-
-  #frontcardimg {
-    height: 100%;
-  }
-
-  #fronttext {
-    overflow: hidden;
-    word-break: break-all;
-    border: 1px solid black;
-  }
-
-  #fronttext h5 {
-    padding-top: 2%;
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-
-  #x {
-    position: relative;
-    top: 76.8px;
-    height: 20px;
-    overflow: hidden;
-  }
-
-  #lefteb {
-    height: 16.8px;
-    width: 8px;
-    background-color: black;
-    /* background-image: url(./components/images/lefteyeball.png); */
-    position: relative;
-    /* top: 79.9px; */
+    background-color: transparent;
     border-radius: 50%;
-    left: 73px;
-  }
-
-  #righteb {
-    height: 16.5px;
-    width: 8px;
-    background-color: black;
-    border-radius: 50%;
+    width: 11px;
+    height: 14px;
     position: relative;
-    top: -16px;
-    left: 105px;
-  }
-
-  #cardimg img {
-    height: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
-  }
-  #buttonaddress {
-    margin-top: 0px !important;
-    margin-left: 3vw;
-  }
-  #textimg {
-    height: 40px;
-    margin-left: 30px;
-    width: 80%;
-  }
-  #addressbtndiv {
-    display: flex;
-    position: relative;
-    top: 15px;
-  }
+    top: 36.1%;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    left: 34%;
 }
 
-/* **************************************************** */
-
-@media screen and (max-width: 1441px) and (min-width: 1200px) {
-  .circletopleft {
-    border: none;
-    width: 14vw;
-    /* margin-top: 19px; */
-    margin-top: 65px;
-    margin-left: 6vw;
-    margin-right: 0px;
-    height: 14vw;
-  }
-
-  #frontimgdiv {
-    height: 23.4vh;
-  }
-
-  #frontcardimg {
-    height: 100%;
-  }
-
-  #fronttext {
-    border: 1px solid black;
-  }
-
-  #fronttext h5 {
-    padding: 2%;
-  }
-
-  #contactnumberdiv {
-    display: flex;
-  }
-
-  .circletopleft img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  .circletopright {
-    border: none;
-    max-width: 100%;
-    margin-bottom: 35px;
-    width: 14vw;
-    margin-left: 6vw;
-    height: 14vw;
-  }
-
-  .circletopright img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  #maindiv {
-    height: auto;
-  }
-
-  #cardimg img {
-    height: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    width: 100%;
-  }
-
-  #buttonaddress {
-    margin-top: 0px !important;
-    margin-left: 30px;
-  }
-
-  #textimg {
-    height: 40px;
-    margin-left: 20px;
-    width: 80%;
-  }
-
-  #addressbtndiv {
-    display: flex;
-    position: relative;
-    top: 10px;
-  }
-
-  #x {
-    position: relative;
-    top: 70.8px;
-
-    height: 20px;
-    overflow: hidden;
-  }
-
-  #lefteb {
-    height: 16.8px;
-    width: 8px;
-    background-color: black;
-    /* background-image: url(./components/images/lefteyeball.png); */
-    position: relative;
-    top: 2px;
+.eye {
+    /* background-color: coral; */
     border-radius: 50%;
-    left: 70px;
-  }
-
-  #righteb {
-    height: 16.5px;
-    width: 8px;
-    background-color: black;
-    border-radius: 50%;
-    position: relative;
-    top: -14px;
-    left: 101.5px;
-  }
-}
-
-/* **************************************************** */
-
-@media screen and (max-width: 1200px) and (min-width: 1024px) {
-  html,
-  body {
-    overflow-y: scroll;
-  }
-
-  /* #leftrightimg {
-    max-width: 100%;
-    min-height: 100%;
-    height: inherit;
-    width: 9.02vw;
-  } */
-
-  .circletopleft {
-    border: none;
-    width: 16vw;
-    margin-top: 50px;
-    margin-left: 6vw;
-    margin-right: 0px;
-    height: 16vw;
-  }
-
-  .circletopleft img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  .circletopright {
-    border: none;
-    max-width: 100%;
-    margin-top: 50px;
-    width: 16vw;
-    margin-left: 5vw;
-    height: 16vw;
-  }
-
-  .circletopright img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  #maindiv {
-    height: auto;
-  }
-
-  /* Bottom cards */
-  #cardDiv {
-    background-color: #304fad;
-    display: flex;
-  }
-
-  #Cards {
-    width: 16.665%;
-  }
-
-  #cardimg img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-  #Cards {
-    height: 50vh;
-  }
-
-  #buttonaddress {
-    margin-top: 0px !important;
-    margin-left: 30px;
-  }
-
-  #textimg {
-    height: 40px;
-    margin-left: 20px;
-    width: 80%;
-  }
-
-  #addressbtndiv {
-    display: flex;
-    position: relative;
-    top: 10px;
-  }
-
-  #frontimgdiv {
-    height: 20vh;
-  }
-
-  #frontcardimg {
-    height: 100%;
-  }
-
-  #x {
-    /* border: 3px solid darkblue; */
-    position: relative;
-    top: 56.9px;
-    height: 16px;
-
-    overflow: hidden;
-  }
-
-  #lefteb {
-    height: 13.8px;
+    background-image: url("./components//images//ebleft.png");
+    background-size: contain;
     width: 6px;
-    background-color: black;
-    /* background-image: url(./components/images/lefteyeball.png); */
-    position: relative;
-    top: 3px;
-    border-radius: 50%;
-    left: 58.5px;
-  }
-
-  #righteb {
-    height: 14.5px;
-    width: 5.8px;
-    background-color: black;
-    border-radius: 50%;
-    position: relative;
-    top: -11px;
-    left: 83.5px;
-  }
+    height: 15px;
+    margin-left: 2px;
 }
 
-/* **************************************************** */
-
-@media screen and (max-width: 1024px) and (min-width: 900px) {
-  html,
-  body {
-    overflow-y: scroll;
-  }
-
-  .circletopleft {
-    border: none;
-    width: 16vw;
-    margin-top: 50px;
-    margin-left: 6vw;
-    margin-right: 0px;
-    height: 16vw;
-  }
-
-  .circletopleft img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  .circletopright {
-    border: none;
-    max-width: 100%;
-    margin-top: 50px;
-    width: 19vw;
-    margin-left: 5vw;
-    height: 19vw;
-  }
-
-  .circletopright img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  #toprightdiv {
-    width: 500px;
-  }
-
-  /* Bottom cards */
-  #cardDiv {
-    display: flex;
-  }
-
-  #Cards {
-    width: 16.667%;
-  }
-
-  #cardimg img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  #cardimg {
-    height: 100%;
-  }
-
-  #Cards {
-    height: 32vh;
-  }
-
-  #buttonaddress {
-    margin-top: -20px !important;
-    margin-left: 30px;
-  }
-
-  #textimg {
-    height: 40px;
-    width: 58%;
-    word-wrap: break-word;
-    margin-left: 40px;
-  }
-
-  #contact {
-    margin-left: 15vw;
-  }
-
-  #social_icons {
-    width: 16%;
-  }
-
-  #belowtopleftcontactdiv {
-    height: 17vh;
-    margin-top: 4px;
-    width: 90%;
-  }
-
-  #addressbtndiv {
-    display: flex;
-    position: relative;
-    top: 15px;
-  }
-
-  .face {
-    width: 200px;
-    height: 198px;
-    background-size: contain;
-    background-image: url(/static/media/topleft_noeyes.3a0a738e.png);
-    margin-left: 4.8vw;
-    margin-top: 6vh;
+.wrapper2 {
+    background-color: transparent;
     border-radius: 50%;
-  }
-}
-
-/* **************************************************** */
-
-/* Responsive for 600-900px */
-@media screen and (max-width: 900px) and (min-width: 769px) {
-  html,
-  body {
-    overflow-y: scroll;
-  }
-
-  .circletopleft {
-    border: none;
-    width: 18vw;
-    margin-top: 30px;
-    margin-left: 4vw;
-    margin-right: 0px;
-    height: 18vw;
-  }
-
-  /* #leftrightimg {
-    max-width: 100%;
-    min-height: 100%;
-    /* height: inherit;
-    width: 13.02vw; */
-  /* }  */
-
-  #topleftimg {
-    display: flex;
-    height: 55%;
-  }
-
-  #topleftcontactdiv {
-    height: auto;
-    display: flex;
-    border: 1px solid black;
-    height: 50%;
-  }
-
-  .circletopleft img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  .circletopright {
-    border: none;
-    max-width: 100%;
-    margin-top: 3 0px;
-    width: 18vw;
-    margin-left: 4vw;
-    height: 18vw;
-  }
-
-  .circletopright img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  #cardDiv {
-    display: flex;
-  }
-
-  #cardimg {
-    height: 100%;
-  }
-
-  #Cards {
-    width: 33.31%;
-  }
-
-  #Cards {
-    height: 50vh;
-  }
-
-  #cardimg img {
-    width: 100%;
-    height: 10vh;
-    max-width: 100%;
-    min-height: 100%;
-  }
-
-  #buttonaddress {
-    margin-top: 0px !important;
-    margin-left: 30px;
-    height: 40px;
-    padding-left: 100px;
-  }
-
-  #contact {
-    padding-left: 80px;
-  }
-
-  #textimg {
-    height: 40px;
-    margin-left: 20px;
-    width: 80%;
-  }
-
-  #addressbtndiv {
-    display: inline-block;
+    width: 11px;
+    height: 14px;
     position: relative;
-    top: 10px;
-    text-align: center;
-  }
-
-  #facebookimg,
-  #instagramimg {
-    height: 2.5vw;
-    width: 1vw;
-    margin-top: 5.5vh;
-    margin-left: 1.3vh;
-    min-width: 50%;
-    max-height: 100%;
-  }
-
-  #lefteb {
-    height: 10.5px;
-    width: 8px;
-    background-color: black;
-    border-radius: 50%;
-    position: relative;
-    top: -118px;
-    left: 82px;
-  }
-
-  #righteb {
-    border-radius: 50%;
-    position: relative;
-    top: -118px;
-    left: 82px;
-  }
-
-  /* #frontimgdiv {
-    height: 22vh;
-  }
-
-  #frontcardimg {
-    height: 100%;
-  } */
-}
-
-/* ******************************** */
-
-/* Responsive for 600-768px */
-@media screen and (max-width: 768px) and (min-width: 600px) {
-  html,
-  body {
-    overflow-y: scroll;
-  }
-
-  #x {
-    height: 10px;
-    margin-top: 41px;
-  }
-
-  #buttonaddress {
-    margin-top: -22px !important;
-    margin-left: 110px;
-    margin-bottom: 10px;
-  }
-
-  #topleftcontactdiv {
-    height: auto;
-    display: flex;
-    border: 1px solid black;
-    height: 42%;
-  }
-
-  #topleftcontactdiv h2 {
-    margin-left: -20px;
-    top: -20px;
-  }
-
-  #textdiv {
-    top: -8px;
-  }
-
-  #textimg {
+    top: 27%;
     overflow: hidden;
-    height: 40px;
-    margin-left: 7vw;
-    width: 70%;
-  }
-
-  #social_icons {
-    width: 10%;
-  }
-
-  #topleftimg {
-    display: flex;
-    height: 58%;
-  }
-
-  #facebookimg,
-  #instagramimg {
-    height: 2.5vw;
-    width: 1vw;
-    margin-top: 5.5vh;
-    margin-left: 1.3vh;
-    min-width: 50%;
-    max-height: 100%;
-  }
-
-  #facebook {
-    background-size: 50%;
-  }
-
-  #contact {
-    padding-left: 50px;
-  }
-
-  #addressbtndiv {
-    display: inline-block;
-    position: relative;
-    top: 10px;
-  }
-
-  .circletopleft {
-    border: none;
-    width: 16vw;
-    margin-top: 40px;
-    margin-left: 7vw;
-    margin-right: 0px;
-    height: 16vw;
-  }
-
-  .circletopleft img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  .circletopright {
-    border: none;
-    max-width: 100%;
-    margin-top: 40px;
-    width: 16vw;
-    margin-left: 3vw;
-    height: 16vw;
-  }
-
-  .circletopright img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  #cardDiv {
-    display: flex;
-  }
-
-  #cardimg {
-    height: 100%;
-  }
-
-  #Cards {
-    width: 33.32%;
-  }
-
-  #Cards {
-    height: 50vh;
-  }
-
-  #cardimg img {
-    width: 100%;
-    height: 42vh;
-    max-width: 100%;
-    min-height: 100%;
-  }
-
-  #imgandtext {
-    border: 1px solid black;
-  }
-
-  #lefteb {
-    margin-left: 43.5px;
-    margin-top: 7.8vh !important;
-    height: 10.5px;
-    background-color: black;
-    width: 5px;
-    border-radius: 50%;
-  }
-
-  #righteb {
-    height: 9.5px;
-    width: 4.7px;
-    position: relative;
-    background-color: black;
-    left: 62.2px !important;
-    top: -1.75vh !important;
-    border-radius: 50%;
-  }
-
-  /* #frontimgdiv {
-    height: 22vh;
-  }
-
-  #frontcardimg {
-    height: 100%;
-  } */
+    /* background-color: aquamarine; */
+    left: 49.5%;
 }
 
-/* Responsive for 451-600px */
-@media screen and (max-width: 600px) and (min-width: 451px) {
-  html,
-  body {
-    overflow-y: scroll;
-  }
-
-  .circletopleft {
-    border: none;
-    width: 20vw;
-    margin-top: 50px;
-    margin-left: 3vw;
-    margin-right: 0px;
-    height: 20vw;
-  }
-
-  /* #leftrightimg {
-    max-width: 100%;
-    min-height: 100%;
-    height: inherit;
-    width: 35.02vw;
-  } */
-
-  #contact {
-    margin-bottom: 0px !important;
-    padding-top: 12px;
-    margin-left: 20px;
-  }
-
-  #buttonaddress {
-    margin-top: 0px !important;
-    margin-left: 20px;
-  }
-
-  #textimg {
-    height: 8vh;
-    width: 35vw;
-    margin-left: 0px !important;
-  }
-
-  #social_icons {
-    display: none;
-  }
-  #topleftimg {
-    display: flex;
-    height: 50%;
-  }
-
-  #topleftcontactdiv {
-    height: auto;
-    display: flex;
-    height: 50%;
-  }
-
-  #textdiv {
-    margin-left: 30px;
-  }
-
-  #addressbtndiv {
-    display: inline-block;
-    position: relative;
-    top: 30px;
-  }
-
-  .circletopleft img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  .circletopright {
-    border: none;
-    max-width: 100%;
-    margin-top: 50px;
-    width: 17vw;
-    margin-left: 2vw;
-    height: 17vw;
-  }
-
-  .circletopleft {
-    border: none;
-    width: 17vw;
-    margin-top: 50px;
-    margin-left: 3vw;
-    margin-right: 0px;
-    height: 17vw;
-  }
-
-  .circletopright img {
-    max-width: 100%;
-    min-height: 100%;
-    width: 100%;
-  }
-
-  #cardDiv {
-    display: flex;
-  }
-
-  #Cards {
-    width: 33.33%;
-  }
-
-  #cardimg img {
-    width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-  }
-
-  /* #frontimgdiv {
-    height: 22vh;
-  }
-
-  #frontcardimg {
-    height: 100%;
-  } */
+.eye2 {
+    /* background-color: coral; */
+    border-radius: 50%;
+    background-image: url("./components//images//ebleft.png");
+    background-size: contain;
+    width: 6px;
+    height: 15px;
+    margin-left: 2px;
 }
 
-/* **************************************************** */
-@media screen and (max-width: 451px) and (min-width: 385px) {
-  html,
-  body {
-    overflow-y: scroll;
-  }
+.wrapper3 {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 27px;
+    position: relative;
+    top: 35%;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    left: 31%;
+}
 
-  #topflex {
-    display: block;
-  }
+.eye3 {
+    background-image: url("./components//images//ebleft.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 25px;
+    margin-left: 2px;
+}
 
-  #contactnumberdiv {
-    display: inline-block;
-    background-color: aliceblue;
-    border: 1px solid black;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 100%;
-  }
+.wrapper4 {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 25px;
+    position: relative;
+    top: 18%;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    left: 58%;
+}
 
-  #buttonaddress {
-    margin-top: 0px !important;
-    margin-left: 21vw;
-  }
+.eye4 {
+    /* background-color: coral; */
+    border-radius: 50%;
+    background-image: url("./components//images//ebleft.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 25px;
+    margin-left: 2px;
+}
 
-  #topleftimg {
-    height: 73vw;
-    margin-right: 22.3%;
-  }
+.wrapper5 {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 18px;
+    height: 22px;
+    position: relative;
+    top: 38%;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    left: 33.5%;
+}
 
-  #social_icons {
-    display: none;
-  }
+.eye5 {
+    background-image: url("./components//images//ebleft.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 22px;
+    margin-left: 2px;
+}
 
-  .sidetextdiv {
-    display: block;
-  }
+.wrapper6 {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 18px;
+    height: 22px;
+    position: relative;
+    top: 23%;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    left: 56%;
+}
 
-  #topleftimg {
-    display: block;
-  }
+.eye6 {
+    /* background-color: coral; */
+    border-radius: 50%;
+    background-image: url("./components//images//ebleft.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 11px;
+    height: 22px;
+    margin-left: 2px;
+}
 
-  .circletopright {
-    display: none;
-  }
-
-  /* Top image  ***** */
-
-  .imgcircle {
+#cardimg img {
+    /* height: 20%; */
     max-width: 100%;
-    max-height: 100%;
-  }
+    /* min-width: 100%; */
+    /* width: 100%; */
+}
 
-  #circletopleft {
-    transform: rotate(0deg) !important;
-    border: none;
-  }
-
-  .circletopleft {
-    background-color: aquamarine;
-    border: none;
-    margin-left: 20.8vw;
-    margin-top: 50px;
-    width: 50vw;
-    height: 50vw;
-  }
-
-  #circleindex {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  #topleftdiv {
-    width: 100%;
-  }
-
-  /* ***** ContactNumber and addressdiv  *****  */
-  #contact {
-    max-width: 100%;
-    min-width: 79%;
-    margin-left: 8vw !important;
-    display: block;
-  }
-  #addressbtndiv {
-    display: inline !important;
-  }
-
-  #btndiv {
-    display: inline-block !important  ;
-    width: 100%;
-  }
-
-  #textimg {
-    margin-top: 10px;
-    max-width: 100%;
-    margin-left: 30px;
-    /* background-image: url("./components//images/textbelowcontact380.png"); */
-    width: 80%;
-  }
-
-  #topleftcontactdiv {
-    height: 70vw;
-    border: none;
-  }
-
-  #addressbtndiv #textdiv {
-    display: inline !important;
-    height: 100vw !important;
-    width: 100%;
-  }
-
-  /* *********** */
-
-  /* ******* TOp right div */
-  #toprightdiv {
-    border: 1px solid black;
-    max-width: 100%;
-    min-width: 100%;
+.mobile-box
+{
+    width: 140%;
     height: 300px;
-  }
-  #cardDiv {
-    display: flex;
-  }
-
-  #cardimg {
-    height: 100%;
-  }
-
-  #Cards {
-    width: 100%;
-    height: 70vh;
-  }
-
-  #cardimg img {
-    width: 100%;
-    height: 10vh;
-    max-width: 100%;
-    min-height: 100%;
-  }
-
-  #lefteb {
-    left: 96.5px !important;
-    top: -29.9vh !important;
-    height: 18.5px;
-    width: 13px;
-    border-radius: 50%;
-  }
-
-  #righteb {
-    height: 18.5px;
-    width: 13px;
-    left: 138.7px !important;
-    top: -33.3vh !important;
-    border-radius: 50%;
-  }
-
-  /* #frontimgdiv {
-    height: 22vh;
-  }
-
-  #frontcardimg {
-    height: 100%;
-  } */
-}
-
-@media screen and (max-width: 385px) and (min-width: 320px) {
-  /* ********** */
-
-  html,
-  body {
-    overflow-y: scroll;
-  }
-
-  #maindiv {
-    background-color: #ededed;
-  }
-
-  #topflex {
-    display: block;
-    height: auto;
-  }
-
-  #topleftdiv {
-    width: 100%;
-  }
-
-  .circletopright {
-    display: none;
-  }
-
-  #topleftimg {
-    height: 100vw;
-    margin-right: 23%;
-  }
-
-  #circleindex {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  #buttonaddress {
-    margin-top: 15px !important;
-    margin-left: 24vw;
-    height: 100%;
-  }
-
-  #leftrightimg {
-    max-width: 100%;
-    height: 92vh;
-    top: 4vh;
-    z-index: 1;
-    width: 8vw;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  }
-
-  #leftrightimg1 {
-    position: fixed;
-    right: 0;
-    top: 4vh;
-    height: 92vh;
-    z-index: 1;
-    width: 8vw;
-    background-image: url(/static/media/leftmargin.a725d47d.png);
-    background-size: cover;
-    /* background-repeat: repeat; */
-  }
-
-  /* ***** ContactNumber and addressdiv  *****  */
-
-  #contactnumberdiv {
-    display: inline-block;
-    background-color: aliceblue;
-    border: 1px solid black;
-    padding-top: 15px;
-    margin-left: 4vw;
-    padding-bottom: 3px;
-    width: 100%;
-  }
-
-  #topbottom,
-  #topbottom1 {
-    z-index: 1;
-    background-size: 40% 30px;
-  }
-
-  #contact {
-    max-width: 100%;
-    min-width: 80%;
-    margin-left: 40px !important;
-    display: block;
-  }
-
-  #addressbtndiv {
-    display: inline !important;
-  }
-
-  #btndiv {
-    display: inline-block !important;
-    width: 100%;
-    height: 6vh;
-  }
-
-  #textimg {
-    margin-top: 90px;
-    overflow: hidden;
-    word-break: break-word;
-    width: 77%;
-    height: 23vh;
-    margin-left: 19vw;
-    /* font-size: calc(0.3vw + 0.5vh + 0.5vmin); */
-    font-size: small;
-  }
-
-  #topleftcontactdiv {
-    height: 52vh;
-    border: none;
-  }
-
-  #addressbtndiv #textdiv {
-    display: inline !important;
-    height: 100vw !important;
-    width: 100%;
-  }
-
-  .lrroot {
-    background-color: aquamarine;
-  }
-
-  /* ******* TOp right div */
-  #toprightdiv {
-    border: 1px solid black;
-    max-width: 100%;
-    min-width: 100%;
-    height: 40vh;
-  }
-
-  /* *********** */
-
-  .circletopleft {
-    border: none;
-    max-width: 100%;
-    margin-top: 30px;
-    margin-left: 23vw;
-    width: 70vw;
-    height: 49vw;
-  }
-
-  #topleftcontactdiv h2 {
-    word-wrap: break-word;
     position: relative;
-    font-size: large;
-    margin-left: 50px;
-    top: -12px;
-    margin-bottom: 0px;
-  }
-
-  #topleftimg {
-    height: 70vw;
-    margin-right: 12%;
-  }
-
-  .face {
-    width: 200px;
-    height: 200px;
-    background-size: contain;
-    background-image: url(/static/media/topleft_noeyes.3a0a738e.png);
-    margin-left: 15.8vw;
-    margin-top: 3vh;
-    border-radius: 50%;
-  }
-
-  #cardDiv {
-    display: flex;
-  }
-
-  #cardimg {
-    width: 88%;
-    margin: auto;
-  }
-
-  #Cards {
-    width: 100%;
-  }
-
-  #Cards {
-    height: 54.5vh;
-  }
-
-  #cardimg img {
-    width: 100%;
-    height: 48vh;
-    margin-bottom: -4px;
-  }
-
-  #lefteb {
-    left: 84.5px !important;
-    top: -26vh !important;
-    height: 15.5px;
-    width: 11px;
-    border-radius: 50%;
-  }
-
-  #righteb {
-    height: 14.5px;
-    width: 11px;
-    left: 120.7px !important;
-    top: -28.8vh !important;
-    border-radius: 50%;
-  }
-  #social_icons {
+    left: -20%;
+    top: 25%;
+    /* background-color: #ffbe00; */
+    background-image: url(./components/images/box-info.png);
+    background-size: 105%;
+    background-position: center;
+    background-repeat: no-repeat;
     display: none;
-  }
 }
+
+.mobile-social, .mobile-text
+{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #topbottom, #topbottom1
+    {
+        background-size: 70% 30px;
+    }
+
+    .face6
+    {
+        transform: scale(1.5);
+    }
+
+    .mobile-box
+    {
+        display: block;
+    }
+
+    .mobile-social
+    {
+        display: block;
+        height: 70px;
+        border: 2px solid black;
+        margin-top: 20px;
+    }
+
+    .mobile-social #facebook, .mobile-social #instagram
+    {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        background-size: 30%;
+    }
+
+    .mobile-text
+    {
+        display: block;
+        color: black;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: Font Mutabor;
+        /* width: 100%; */
+    }
+
+    .bekishev
+    {
+        text-decoration: underline;
+    }
+
+    .info-contact
+    {
+        margin-top: 20px;
+        background-color: #FFF;
+        width: calc(100vw - 60px - 2vw);
+        color: black;
+        height: 300px;
+    }
+
+    #social_icons2, #textimg2, .madeby
+    {
+        display: none;
+    }
+
+    #contact2
+    {
+        color: black;
+        position: unset;
+        transform: translate(0);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .rot2
+    {
+        display: none;
+    }
+
+    #topflex
+    {
+        flex-flow: column;
+        height: 80%;
+    }
+
+    .circles
+    {
+        width: unset;
+    }
+
+    #social_icons
+    {
+        display: none;
+    }
+
+    #contact
+    {
+        width: 100%;
+        font-size: 20px;
+        line-height: 80px;
+        text-align: center;
+        height: 80px;
+        border-bottom: 1.5px solid black;
+    }
+
+    #topleftcontactdiv
+    {
+        height: 50%;
+    }
+
+    #topleftimg
+    {
+        height: 100%;
+    }
+
+    .face
+    {
+        transform: scale(1.5) !important;
+    }
+
+    #toprightdiv
+    {
+        display: none;
+    }
+
+    .contact-wrapper
+    {
+        position: unset;
+        transform: translate(0);
+    }
+
+    #belowtopleftcontactdiv
+    {
+        width: 100%;
+    }
+
+    #topleftdiv
+    {
+        width: 100%;
+    }
+
+    #btndiv
+    {
+        display: none;
+    }
+
+    #textdiv
+    {
+        width: calc(100% - 30px);
+        font-size: calc(0.8vw + 0.6vh + 0.5vmin);
+    }
+
+}
+
+@media screen and (min-height: 800px) 
+{
+    .face
+    {
+        transform: scale(1.5);
+    }
+    .rot2
+    {
+        transform: scale(1.5);
+    }
+}
+
+
+/* **************************************************** */
