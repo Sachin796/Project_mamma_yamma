@@ -1,52 +1,79 @@
 window.addEventListener("load", function() {
-  var url =
-    "https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB";
-  var canvas = document.getElementById("canvas");
+  init();
 
-  var ctx = canvas.getContext("2d");
-  var img = new Image();
-  img.src = url;
-  img.onload = function() {
-    var width = window.screen.width;
-    var height = window.screen.height;
+  function init() {
+    var url =
+      "https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB";
 
-    canvas.width = width;
-    canvas.height = height;
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
 
-    ctx.drawImage(img, 0, 0, width, height);
-  };
+    var img = new Image();
+    img.src = url;
+    img.crossOrigin = "Anonymous";
 
-  var isPress = false;
-  var old = null;
+    img.onload = function() {
+      var width = window.screen.width;
+      var height = window.screen.height;
 
-  canvas.addEventListener("mousemove", function(e) {
-    // old = {
-    //   x: e.offsetX,
-    //   y: e.offsetY
-    // };
-    // if (isPress) {
-    var x = e.offsetX;
-    var y = e.offsetY;
-    ctx.globalCompositeOperation = "destination-out";
-    // ctx.beginPath();
-    ctx.arc(x, y + 100, 45, 0, 2 * Math.PI);
-    ctx.fill();
-    console.log(ctx);
+      canvas.width = width;
+      canvas.height = height;
+      ctx.drawImage(img, 0, 0, width, height);
+    };
 
-    ctx.lineWidth = 20;
-    ctx.beginPath();
-    ctx.moveTo(old.x, old.y);
-    // ctx.lineTo(x, y);
-    ctx.stroke();
-    ctx.filter = "blur(1px)";
+    function drawPoint(pointX, pointY) {
+      var imageData = ctx.getImageData(
+        0,
+        0,
+        ctx.canvas.width,
+        ctx.canvas.height
+      );
+      imageData.crossOrigin = "Anonymous";
 
-    // old = {
-    //   x: x,
-    //   y: y
-    // };
-  });
+      ctx.globalCompositeOperation = "destination-out";
+      ctx.arc(pointX, pointY, 45, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.lineWidth = 20;
+      ctx.beginPath();
+      ctx.stroke();
+      ctx.filter = "blur(1px)";
+      var trans = 0;
+      for (var i = 0; i < imageData.data.length; i += 4) {
+        if (imageData.data[i + 3] <= 10) {
+          trans++;
+        }
+      }
+      var total = imageData.data.length / 4;
+      var percent = (trans / total) * 100;
+      if (percent >= 75) {
+        document.getElementById("canvas").style.display = "none";
+      }
+    }
 
-  canvas.addEventListener("mouseup", function(e) {
-    isPress = false;
-  });
+    canvas.addEventListener(
+      "touchstart",
+      function(e) {
+        drawPoint(e.touches[0].screenX, e.touches[0].screenY);
+      },
+      false
+    );
+
+    canvas.addEventListener(
+      "touchmove",
+      function(e) {
+        e.preventDefault();
+        drawPoint(e.touches[0].screenX, e.touches[0].screenY);
+      },
+      false
+    );
+
+    canvas.addEventListener(
+      "mousemove",
+      function(e) {
+        e.preventDefault();
+        drawPoint(e.screenX, e.screenY);
+      },
+      false
+    );
+  }
 });
