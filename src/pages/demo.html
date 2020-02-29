@@ -1,70 +1,135 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ru">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="html2canvas.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rasterizehtml/1.3.0/rasterizeHTML.allinone.js"></script> -->
   </head>
-
   <style>
     * {
       margin: 0;
       padding: 0;
+    }
+
+    body {
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .box {
+      display: inline-block;
+      background: url("../components/images/back.png");
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+      /* filter: contrast(0.5) grayscale(100%); */
       overflow: hidden;
     }
 
-    .wrapper {
-      background-color: brown;
-      border-radius: 50%;
-      width: 20px;
-      height: 30px;
-      position: relative;
-      top: 30%;
-      left: 30%;
+    .box p {
+      animation: move 10s infinite;
+      background-color: chocolate;
+      position: absolute;
     }
 
-    .eye {
-      /* background-color: coral; */
-      border-radius: 50%;
-      background-image: url("../components/images/ebleft.png");
-
-      width: 10px;
-      height: 20px;
-    }
-
-    .face {
-      width: 200px;
-      height: 200px;
-      background-color: chartreuse;
-      /* position: absolute;
+    @keyframes move {
+      0% {
+        left: 0%;
+      }
+      100% {
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); */
-      border-radius: 50%;
+      }
+    }
+
+    canvas {
+      overflow: hidden;
+      width: 100%;
+
+      opacity: 0.9;
     }
   </style>
 
   <body>
-    <div class="face">
-      <div class="wrapper">
-        <div class="eye"></div>
-      </div>
+    <div class="box" id="box">
+      <!-- <p>Hello</p> -->
+      <canvas id="canvas"></canvas>
     </div>
   </body>
 
   <script>
-    var currentMousePos = {
-        x: 0,
-        y: 0
-      },
-      wHeight = $(window).height(),
-      wWidth = $(window).width();
-    $(document).mousemove(function(event) {
-      currentMousePos.x = event.pageX;
-      currentMousePos.y = event.pageY;
-      var trans1 = ((currentMousePos.x * 60) / wHeight) * 0.8 + "%", //Image
-        trans2 = ((currentMousePos.y * 60) / wHeight) * 0.8 + "%"; //Image
-      $(".eye").css({
-        "-webkit-transform": "translate(" + trans1 + ", " + trans2 + ")"
-      });
+    // html2canvas(document.querySelector(".box"), {
+    //     onclone: true,
+    //     canvas: document.getElementById('canvas'),
+    //     width: window.screen.width,
+    // }).then(canvas => {
+    //     document.body.appendChild(canvas)
+    // });
+
+    // var canvas = document.getElementById('canvas');
+    // html_container = document.getElementById("box"),
+    //     html = html_container.innerHTML;
+
+    // rasterizeHTML.drawHTML(html, canvas);
+    // var heightRatio = 2.1;
+    // canvas.height = canvas.width * heightRatio;
+
+    // var url = "canvas.jpg";
+    var url =
+      "https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB";
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var img = new Image();
+    img.src = url;
+    img.onload = function() {
+      var width = window.screen.width;
+      var height = window.screen.height - 110;
+
+      canvas.width = width;
+      canvas.height = height;
+
+      ctx.drawImage(img, 0, 0, width, height);
+    };
+
+    var isPress = false;
+    var old = null;
+    // canvas.addEventListener('mousedown', function (e){
+    //   isPress = true;
+    //   old = {x: e.offsetX, y: e.offsetY};
+    // });
+    // setInterval(() => {
+    canvas.addEventListener("mousemove", function(e) {
+      old = {
+        x: e.offsetX,
+        y: e.offsetY
+      };
+      // if (isPress) {
+      var x = e.offsetX;
+      var y = e.offsetY;
+      ctx.globalCompositeOperation = "destination-out";
+
+      ctx.beginPath();
+      ctx.arc(x, y, 45, 0, 2 * Math.PI);
+      ctx.fill();
+
+      ctx.lineWidth = 20;
+      ctx.beginPath();
+      ctx.moveTo(old.x, old.y);
+      ctx.lineTo(x, y);
+      ctx.stroke();
+      ctx.filter = "blur(1px)";
+
+      old = {
+        x: x,
+        y: y
+      };
+
+      // }
+    });
+
+    // }, 50);
+
+    canvas.addEventListener("mouseup", function(e) {
+      isPress = false;
     });
   </script>
 </html>

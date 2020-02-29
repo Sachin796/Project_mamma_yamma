@@ -26,21 +26,42 @@ function toprightdiv() {
   консерантов,стабилизаторов и усилителей вкуса.
   ® Mommy Yummy / 2020-Москва</a>
   </textPath>`;
-  
+
   // <animate attributeName="startOffset" from="0%" to="10%" dur="5s" repeatCount="100" ></animate>
   return (
     <>
       <div id="toprightdiv">
         <div id="hero-img"></div>
         <div class="text-wrapper">
-      <svg viewBox="0 0 50% 50%" id="menu-svg"  data-reactid="13">
-          <defs data-reactid="14">
-            <ellipse id="textPath03" data-reactid="15" fill="yellow" cx="50%" cy="50%" rx="50%" ry="50%" />
-          </defs>
-          <use xmlnsXlink="#textPath03" fill="yellow" stroke="red" data-reactid="19"></use>
-          <text id="svg-text" letter-spacing="1px" fill="#FFF" textLength="702%" dangerouslySetInnerHTML={{__html: textPath }} y="-5"></text>;
-        </svg>
-    </div >
+          <svg viewBox="0 0 50 50" id="menu-svg" stroke="red" data-reactid="13">
+            <defs data-reactid="14">
+              <ellipse
+                id="textPath03"
+                data-reactid="15"
+                fill="yellow"
+                cx="50%"
+                cy="50%"
+                rx="50%"
+                ry="50%"
+              />
+            </defs>
+            <use
+              xmlnsXlink="#textPath03"
+              fill="yellow"
+              stroke="red"
+              data-reactid="19"
+            ></use>
+            <text
+              id="svg-text"
+              letter-spacing="1px"
+              fill="red "
+              textLength="702%"
+              dangerouslySetInnerHTML={{ __html: textPath }}
+              y="-5"
+            ></text>
+            ;
+          </svg>
+        </div>
       </div>
     </>
   );

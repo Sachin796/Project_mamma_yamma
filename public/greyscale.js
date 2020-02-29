@@ -1,43 +1,52 @@
-let Img = import("../src/components/images/topleft_noeyes.png");
+window.addEventListener("load", function() {
+  var url =
+    "https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB";
+  var canvas = document.getElementById("canvas");
 
-document.addEventListener("onload", function() {
-  function grayscale(Img, bPlaceImage) {
-    var myCanvas = document.createElement("canvas");
-    var myCanvasContext = myCanvas.getContext("2d");
+  var ctx = canvas.getContext("2d");
+  var img = new Image();
+  img.src = url;
+  img.onload = function() {
+    var width = window.screen.width;
+    var height = window.screen.height;
 
-    var imgWidth = Img.width;
-    var imgHeight = Img.height;
-    // You'll get some string error if you fail to specify the dimensions
-    myCanvas.width = imgWidth;
-    myCanvas.height = imgHeight;
-    //  alert(imgWidth);
-    myCanvasContext.drawImage(Img, 0, 0);
+    canvas.width = width;
+    canvas.height = height;
 
-    // This function cannot be called if the image is not rom the same domain.
-    // You'll get security error if you do.
-    var imageData = myCanvasContext.getImageData(0, 0, imgWidth, imgHeight);
+    ctx.drawImage(img, 0, 0, width, height);
+  };
 
-    // This loop gets every pixels on the image and
-    for (let j = 0; j < imageData.height; i++) {
-      for (let i = 0; i < imageData.width; j++) {
-        var index = i * 4 * imageData.width + j * 4;
-        var red = imageData.data[index];
-        var green = imageData.data[index + 1];
-        var blue = imageData.data[index + 2];
-        var alpha = imageData.data[index + 3];
-        var average = (red + green + blue) / 3;
-        imageData.data[index] = average;
-        imageData.data[index + 1] = average;
-        imageData.data[index + 2] = average;
-        imageData.data[index + 3] = alpha;
-      }
-    }
+  var isPress = false;
+  var old = null;
 
-    if (bPlaceImage) {
-      var myDiv = document.createElement("div");
-      myDiv.appendChild(myCanvas);
-      Img.parentNode.appendChild(myCanvas);
-    }
-    return myCanvas.toDataURL();
-  }
+  canvas.addEventListener("mousemove", function(e) {
+    // old = {
+    //   x: e.offsetX,
+    //   y: e.offsetY
+    // };
+    // if (isPress) {
+    var x = e.offsetX;
+    var y = e.offsetY;
+    ctx.globalCompositeOperation = "destination-out";
+    // ctx.beginPath();
+    ctx.arc(x, y + 100, 45, 0, 2 * Math.PI);
+    ctx.fill();
+    console.log(ctx);
+
+    ctx.lineWidth = 20;
+    ctx.beginPath();
+    ctx.moveTo(old.x, old.y);
+    // ctx.lineTo(x, y);
+    ctx.stroke();
+    ctx.filter = "blur(1px)";
+
+    // old = {
+    //   x: x,
+    //   y: y
+    // };
+  });
+
+  canvas.addEventListener("mouseup", function(e) {
+    isPress = false;
+  });
 });
