@@ -12,7 +12,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow: visible !important; */
+  /* overflow: hidden; */
+  /* overflow-y: scroll !important; */
 }
 
 *::-webkit-scrollbar {
@@ -1050,10 +1051,21 @@ svg {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #topbottom,
   #topbottom1 {
     background-size: 70% 30px;
+  }
+
+  #textimg {
+    /* background-color: black; */
+    text-align: center;
+    height: 10vh;
+    font-size: x-small;
+  }
+
+  #textdiv {
+    margin-left: 108px !important;
   }
 
   .face6 {
@@ -1121,7 +1133,7 @@ svg {
 
   #topflex {
     flex-flow: column;
-    height: 80%;
+    height: 56%;
   }
 
   .circles {
@@ -1146,11 +1158,12 @@ svg {
   }
 
   #topleftimg {
-    height: 100%;
+    height: 60%;
   }
 
   .face {
-    transform: scale(1.5) !important;
+    transform: scale(1) !important;
+    margin-left: 32vw;
   }
 
   #toprightdiv {
@@ -1186,6 +1199,137 @@ svg {
   }
   .rot2 {
     transform: scale(1.5);
+  }
+}
+
+@media (max-width: 800px) {
+  .circles {
+    width: 94%;
+  }
+  #btndiv p {
+    font-size: 9px;
+  }
+
+  #textdiv {
+    font-family: Font Mutabor;
+    display: inline-block;
+    width: calc(70% - 30px);
+    /* font-weight: 700; */
+    font-size: calc(0.3vw + 0.2vh + 0.4vmin);
+    margin-left: 12px;
+    color: #fff;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 426px) {
+  .face {
+    transform: scale(1) !important;
+    margin-left: 22vw;
+  }
+
+  #cardDiv {
+    margin-top: 4px;
+  }
+  #textdiv {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+
+  #cardDiv {
+    display: inline-block !important;
+  }
+  #Cards {
+    height: 63vh;
+    width: 63vh;
+  }
+  .flip-card {
+    width: 63vh;
+  }
+  #topleftcontactdiv {
+    height: 53% !important;
+  }
+  #maindiv {
+    overflow-y: scroll;
+  }
+  #topflex {
+    height: 58%;
+  }
+}
+
+@media (max-width: 375px) {
+  .face {
+    transform: scale(1) !important;
+    margin-left: 22vw;
+  }
+
+  #cardDiv {
+    margin-top: 4px;
+  }
+  #textdiv {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+
+  #cardDiv {
+    display: inline-block !important;
+  }
+  #Cards {
+    height: 65vh;
+    width: 54vh;
+  }
+  .flip-card {
+    width: 63vh;
+  }
+
+  .flip-card-inner {
+    width: 85%;
+  }
+
+  #topleftcontactdiv {
+    height: 53% !important;
+  }
+  #maindiv {
+    overflow-y: scroll;
+  }
+  #topflex {
+    height: 60%;
+  }
+}
+
+@media (max-width: 320px) {
+  .face {
+    transform: scale(1.2) !important;
+    margin-left: 14vw;
+  }
+
+  .face {
+    transform: scale(1.2) !important;
+    margin-left: 14vw;
+  }
+
+  #topleftimg {
+    height: 75%;
+  }
+
+  .flip-card-inner {
+    width: 100%;
+  }
+
+  #topflex {
+    flex-flow: column;
+    height: 69.4% !important;
+  }
+
+  #cardDiv {
+    display: inline-block !important;
+  }
+  #Cards {
+    height: 42vh !important;
+    width: 45vh;
+  }
+  .flip-card {
+    width: 44vh;
   }
 }
 
