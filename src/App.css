@@ -598,8 +598,7 @@ a {
   height: calc(100vh - 60px - 4vh - 55vh);
   top: 0%;
   left: 0%;
-  overflow: hidden;
-  /* position: fixed; */
+  /* overflow: hidden; */
 }
 
 svg {
