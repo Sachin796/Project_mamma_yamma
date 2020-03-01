@@ -1132,7 +1132,7 @@ svg {
 
   #topflex {
     flex-flow: column;
-    height: 56%;
+    height: 62%;
   }
 
   .circles {
@@ -1240,10 +1240,10 @@ svg {
   }
   #Cards {
     height: 63vh;
-    width: 63vh;
+    width: 68vh;
   }
   .flip-card {
-    width: 63vh;
+    width: 68vh;
   }
   #topleftcontactdiv {
     height: 53% !important;
@@ -1252,7 +1252,7 @@ svg {
     overflow-y: scroll;
   }
   #topflex {
-    height: 58%;
+    height: 63.4%;
   }
 }
 
@@ -1275,10 +1275,10 @@ svg {
   }
   #Cards {
     height: 65vh;
-    width: 54vh;
+    width: 59vh;
   }
   .flip-card {
-    width: 63vh;
+    width: 69vh;
   }
 
   .flip-card-inner {
@@ -1292,7 +1292,7 @@ svg {
     overflow-y: scroll;
   }
   #topflex {
-    height: 60%;
+    height: 66.2%;
   }
 }
 
@@ -1317,7 +1317,7 @@ svg {
 
   #topflex {
     flex-flow: column;
-    height: 69.4% !important;
+    height: 75.8% !important;
   }
 
   #cardDiv {
@@ -1325,10 +1325,10 @@ svg {
   }
   #Cards {
     height: 42vh !important;
-    width: 45vh;
+    width: 48.4vh;
   }
   .flip-card {
-    width: 44vh;
+    width: 48vh;
   }
 }
 
