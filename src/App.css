@@ -1245,6 +1245,11 @@ svg {
   .flip-card {
     width: 68vh;
   }
+
+  .flip-card-front p {
+    font-size: xx-small;
+  }
+
   #topleftcontactdiv {
     height: 53% !important;
   }
@@ -1270,11 +1275,15 @@ svg {
     margin-left: 0px !important;
   }
 
+  .flip-card-front p {
+    font-size: small !important;
+  }
+
   #cardDiv {
     display: inline-block !important;
   }
   #Cards {
-    height: 65vh;
+    height: 75vh;
     width: 59vh;
   }
   .flip-card {
@@ -1302,6 +1311,10 @@ svg {
     margin-left: 14vw;
   }
 
+  .flip-card-front p {
+    font-size: xx-small !important;
+  }
+
   .face {
     transform: scale(1.2) !important;
     margin-left: 14vw;
@@ -1324,7 +1337,7 @@ svg {
     display: inline-block !important;
   }
   #Cards {
-    height: 42vh !important;
+    height: 60vh !important;
     width: 48.4vh;
   }
   .flip-card {
