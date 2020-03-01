@@ -1239,11 +1239,11 @@ svg {
     display: inline-block !important;
   }
   #Cards {
-    height: 63vh;
+    height: 61vh;
     width: 68vh;
   }
   .flip-card {
-    width: 68vh;
+    width: 62.2vh;
   }
 
   .flip-card-front p {
@@ -1279,12 +1279,16 @@ svg {
     font-size: small !important;
   }
 
+  .flip-card-front {
+    width: 92% !important;
+  }
+
   #cardDiv {
     display: inline-block !important;
   }
   #Cards {
-    height: 75vh;
-    width: 59vh;
+    height: 60vh;
+    width: 54vh;
   }
   .flip-card {
     width: 69vh;
@@ -1315,6 +1319,15 @@ svg {
     font-size: xx-small !important;
   }
 
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 93%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
   .face {
     transform: scale(1.2) !important;
     margin-left: 14vw;
@@ -1337,7 +1350,7 @@ svg {
     display: inline-block !important;
   }
   #Cards {
-    height: 60vh !important;
+    height: 50vh !important;
     width: 48.4vh;
   }
   .flip-card {
