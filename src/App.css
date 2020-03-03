@@ -120,6 +120,10 @@ body {
   font-size: 30px;
 }
 
+#responsivesocialmedia {
+  display: none;
+}
+
 #middiv {
   width: 100%;
 }
@@ -249,6 +253,10 @@ body {
 body {
   width: 100vw;
   height: 100vh;
+}
+
+#Card9 {
+  display: none;
 }
 
 canvas {
@@ -636,6 +644,15 @@ svg {
   background-size: 105%;
 }
 
+.product-image1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 78%;
+}
+
 .flip-card-back .product-image {
   width: 100%;
   height: 50%;
@@ -731,6 +748,16 @@ svg {
   transition: all 0.5s ease;
   overflow: hidden;
   border: 1px solid #111;
+}
+
+#Cards1 {
+  height: 100%;
+  width: 25vh;
+  /* background-color: blanchedalmond; */
+  display: none;
+  /* flex-direction: column; */
+  transition: all 0.5s ease;
+  overflow: hidden;
 }
 
 #frontimgdiv {
@@ -1261,7 +1288,82 @@ svg {
   }
 }
 
+@media (max-width: 426px) {
+  #Card7 {
+    background-image: url("./components/images/socialmedia.png");
+    background-size: 89%;
+    height: 18vh;
+    background-repeat: no-repeat;
+  }
+
+  #Card8 {
+    width: 90%;
+    height: 40vh;
+    background-image: url("./components/images/responsivesecondlast.png");
+    background-size: 65%;
+    background-repeat: no-repeat;
+    margin-left: 15%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #Card9 {
+    display: inline-block;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+  }
+  #Card9 p {
+    padding-top: 40px;
+    font-family: Font Mutabor;
+  }
+  #responsivesocialmedia {
+    height: 50px;
+    /* background-image: url("./components//images//socialmedia.png"); */
+    /* background-size: cover; */
+    height: 11vh;
+    display: block;
+  }
+}
+
 @media (max-width: 375px) {
+  #Card7 {
+    height: 15vh;
+    background-image: url("./components//images/socialmedia.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  #Card8 {
+    width: 20px;
+    margin-top: 20px;
+    width: 90%;
+    height: 33vh;
+    background-image: url(/static/media/responsivesecondlast.c785036f.png);
+    background-size: 56%;
+    background-repeat: no-repeat;
+    margin-left: 19%;
+  }
+
+  #Card9 {
+    display: inline-block;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+  }
+  #Card9 p {
+    padding-top: 40px;
+    font-family: Font Mutabor;
+  }
+  #responsivesocialmedia {
+    height: 50px;
+    /* background-image: url("./components//images//socialmedia.png"); */
+    /* background-size: cover; */
+    height: 11vh;
+
+    display: block;
+  }
+
   .face {
     transform: scale(1) !important;
     margin-left: 22vw;
@@ -1280,7 +1382,7 @@ svg {
   }
 
   .flip-card-front {
-    width: 92% !important;
+    width: 100% !important;
   }
 
   #cardDiv {
@@ -1291,7 +1393,8 @@ svg {
     width: 54vh;
   }
   .flip-card {
-    width: 69vh;
+    /* width: 104.2vw; */
+    width: calc(100%-0px) !important;
   }
 
   .flip-card-inner {
@@ -1315,8 +1418,54 @@ svg {
     margin-left: 14vw;
   }
 
+  #Cardtop {
+    height: 36vh;
+  }
+
+  #background-image {
+    background-image: none !important;
+  }
+
+  #Cards1 {
+    height: 100%;
+    width: 46vh;
+    display: block;
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+
+  #responsivesocialmedia {
+    height: 50px;
+    height: 11vh;
+
+    display: block;
+  }
+
   .flip-card-front p {
     font-size: xx-small !important;
+    height: 12vh;
+  }
+
+  #Card7 {
+    width: 90%;
+
+    background-image: url("./components//images//socialmedia.png");
+    background-size: 94%;
+  }
+
+  #Card8 {
+    height: 30vh;
+  }
+
+  #Card9 {
+    display: inline-block;
+    text-align: center;
+    height: 20vh;
+    width: 100%;
+  }
+  #Card9 p {
+    padding-top: 40px;
+    font-family: Font Mutabor;
   }
 
   .flip-card-front,

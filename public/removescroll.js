@@ -6,7 +6,7 @@ var handleScrollListener = function() {
     document.getElementById("maindiv").style.overflow = "visible";
     document.getElementById("maindiv").style.overflowY = "scroll";
     let cardsObj = document.getElementsByClassName("cardi");
-    for (let i = 6; i <= 29; i++) {
+    for (let i = 8; i <= 31; i++) {
       cardsObj[i].style.display = "none";
 
       // document.getElementsByClassName("cardi")[i].className = "cardii";
@@ -16,7 +16,7 @@ var handleScrollListener = function() {
     document.getElementById("maindiv").style.overflow = "hidden";
     document.getElementById("maindiv").style.overflowY = "hidden";
     let cardsObj = document.getElementsByClassName("cardi");
-    for (let i = 6; i <= 29; i++) {
+    for (let i = 8; i <= 31; i++) {
       cardsObj[i].style.display = "inline-block";
       // document.getElementsByClassName("cardii")[i].className = "cardi";
     }
