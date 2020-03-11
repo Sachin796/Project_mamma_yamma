@@ -1,8 +1,9 @@
 window.addEventListener("load", function() {
-  init();
-
+  this.console.log(this.window.history);
+  if ((this.window.history.go = 1)) {
+    init();
+  }
   function init() {
-    console.log("Function called on init");
     var url =
       "https://sherwin.scene7.com/is/image/sw/color-swatch?_tparam_size=250,250&layer=comp&_tparam_color=C2C0BB";
 
@@ -32,12 +33,11 @@ window.addEventListener("load", function() {
       imageData.crossOrigin = "Anonymous";
 
       ctx.globalCompositeOperation = "destination-out";
-      ctx.arc(pointX, pointY, 45, 0, Math.PI * 2);
+      ctx.arc(pointX, pointY, 45, 0, Math.PI * 3);
       ctx.fill();
-      ctx.lineWidth = 20;
+      ctx.lineWidth = 50;
       ctx.beginPath();
       ctx.stroke();
-      ctx.filter = "blur(1px)";
       var trans = 0;
       for (var i = 0; i < imageData.data.length; i += 4) {
         if (imageData.data[i + 3] <= 10) {
