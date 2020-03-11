@@ -33,7 +33,7 @@ function toprightdiv() {
       <div id="toprightdiv">
         <div id="hero-img"></div>
         <div class="text-wrapper">
-          <svg viewBox="0 0 50 50" id="menu-svg" stroke="red" data-reactid="13">
+          {/* <svg viewBox="0 0 50 50" id="menu-svg" stroke="red" data-reactid="13">
             <defs data-reactid="14">
               <ellipse
                 id="textPath03"
@@ -60,7 +60,7 @@ function toprightdiv() {
               y="-5"
             ></text>
             ;
-          </svg>
+          </svg> */}
         </div>
       </div>
     </>
